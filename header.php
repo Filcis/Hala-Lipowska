@@ -21,8 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="header-area full-wrapper">
-        <div class="page-content-wrapper">            
+    <div class="header-area full-wrapper">        
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hl' ); ?></a>
 
             <header id="masthead" class="site-header" role="banner">
@@ -32,7 +31,6 @@
                             <?php else : ?>
                                     <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
                             <?php endif; ?>
-                            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
                     </div><!-- .site-branding -->
 
                     <nav id="site-navigation" class="main-navigation" role="navigation">
@@ -40,7 +38,6 @@
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
                     </nav><!-- #site-navigation -->
             </header><!-- #masthead -->
-        </div>
     </div>
 <div class="main-content-area full">
     <div class="page-content-wrapper">
