@@ -275,6 +275,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+    font-family: 'Open Sans';
 }
 
 h1,
@@ -890,7 +891,7 @@ object {
 
 
 /*--------------------------------------------------------------
-## Sitructure
+## Structure
 --------------------------------------------------------------*/
 
 .page-content-wrapper {
