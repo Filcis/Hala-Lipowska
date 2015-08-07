@@ -490,8 +490,9 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Navigation
+# Navigation & Branding
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -521,28 +522,84 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
+.site-branding {
+	width: 25%;
+	background-color: #f9f9f9;
+	height: 70px;
+	float: left;
+}
+
+#logo { /*logo positioning*/
+	display: block;
+	position: relative;
+	top: 8px;
+	margin: 0 auto;
+}
+
+.main-navigation-wrapper {
+	height: 70px;
+	/*display: block;*/
+	border-bottom: 1px solid  lightgray;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+
+.main-navigation {
+	width: 60%;
+	background-color: rgba(0, 102, 50, 0.4);
+	height: 70px;
+	float: left;
+}
+
+#widget-wrapper {
+	width: 15%;
+	background-color: rgba(0, 102, 50, 0.4);
+	height: 70px;
+	float: left;
+}
+
+/* default _s settings
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	float: left;	
 	width: 100%;
 }
+*/
 
 .main-navigation ul {
-	display: none;
+	display: block;
+	margin: 0 auto;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	height: 100%;
+	width: 520px;
+	white-space: nowrap;
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
+	display: block;
+	height: 100%;
+	float:left;
 }
 
 .main-navigation a {
 	display: block;
+	padding: 0 25px;
 	text-decoration: none;
+	font-family: 'Open Sans';
+	font-size: 0.9em;
+	color: white;
+	line-height: 70px;
+}
+
+.main-navigation a:hover {
+	background-color: rgba(0, 102, 50, 0.3);
 }
 
 .main-navigation ul ul {
