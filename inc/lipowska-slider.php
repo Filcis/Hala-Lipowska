@@ -42,7 +42,10 @@ function l_slider_function($type='l_slider_function') {
 		$result .='<div style="background-image: url('. $the_url[0] .');"></div>';
 //        $result .='<img title="'.get_the_title().'" src="' . $the_url[0] . '" data-thumb="' . $the_url[0] . '" alt=""/>';
     }
+	
     $result .= '</div>';
+	$result .='<div id="mainheader"><img class="logo" src="'. get_stylesheet_directory_uri() . '/logo.svg"><h1>Czas na relaks</h1></div>
+        	<div class="arrow_wrapper"><img class="arrow-down-button"  src="'. get_stylesheet_directory_uri() . '/ikony/arrow-down.svg"></div>';
     $result .='</div>';
     return $result;
 }
