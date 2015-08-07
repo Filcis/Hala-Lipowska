@@ -46,7 +46,7 @@
     </div>
 <div class="main-content-area full">
 	
-
+<?php echo l_slider_function(); ?>
 	
     <div class="page-content-wrapper">
 	<div id="content" class="site-content">

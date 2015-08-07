@@ -29,6 +29,16 @@ $(window).load(function(){
 			cycleImages()
 		},7000);
 })
+
+
+
+$(document).ready(function(){
+//    var a = $(window).height() - $('#menu').height();
+    var a = $(window).height();
+    $(".slider_wrapper").css('height', a);
+
+});
+
 	
 });
 
