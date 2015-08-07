@@ -116,11 +116,13 @@ add_action( 'widgets_init', 'hl_widgets_init' );
 function hl_scripts() {
 	wp_enqueue_style( 'hl-style', get_stylesheet_uri() );
         
-        wp_enqueue_style( 'hl-fonts', '@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);' );
+	wp_enqueue_style( 'hl-fonts', '@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);' );
 
 	wp_enqueue_script( 'hl-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
         
-        wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array(), '', true );
+	wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array(), '', true );
+	
+	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
 
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -154,3 +156,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/lipowska-slider.php';

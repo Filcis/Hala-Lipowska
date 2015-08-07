@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+	## Slider
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -944,6 +945,40 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*--------------------------------------------------------------
+## Slider
+--------------------------------------------------------------*/
+
+.slider_wrapper {
+position:relative;
+
+    height: 800px;
+    width: 100%;
+    margin: 0;
+}
+
+.image_slider {
+    height: inherit;
+    padding:0;
+    margin:0;
+    width:100%;
+    z-index:-1;
+}
+
+.image_slider div {
+    height: inherit;
+    position:absolute;
+    left:0;
+    top:0px;
+    width:100%;
+    z-index:1;
+    background-size:cover;
+    background-POSITION: center;
+}
+
+.image_slider div.active{z-index:3}
 
 
 
