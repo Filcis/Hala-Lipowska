@@ -1031,6 +1031,16 @@ position:relative;
     margin:0 auto;
 }
 
+#image_wrapper {
+	position:relative;
+	height: 600px;
+	width: 100%;
+	margin: 0;
+	background-repeat: no-repeat ;
+	background-size:cover ;
+	background-POSITION: center;
+}
+
 /*--------------------------------------------------------------
 ## Simple Responsive Grid
 --------------------------------------------------------------*/
@@ -1076,6 +1086,13 @@ position:relative;
 
 .col-1-8 {
     width: 12.5%;
+}
+
+
+@media only screen and (min-height: 950px) {
+    #image_wrapper{
+        height: 900px;
+    }
 }
 
 

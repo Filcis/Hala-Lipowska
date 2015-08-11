@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 
@@ -26,13 +25,11 @@
 
             <header id="masthead" class="site-header main-navigation-wrapper" role="banner">
                     <div class="site-branding">
-                            <?php if ( is_front_page() && is_home() ) : ?>
+                            
                                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                                     <img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo.png">
                                     </a>
-                            <?php else : ?>
-                                    <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                            <?php endif; ?>
+                           
                     </div><!-- .site-branding -->
 
                     <nav id="site-navigation" class="main-navigation" role="navigation">
@@ -40,13 +37,30 @@
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
                     </nav><!-- #site-navigation -->
 				
-					<div id='widget-wrapper'></div><!-- #weather widget and facebook icon -->
+<div id='widget-wrapper'>
+<button type="button" class="weather_button">Pogoda<div class="arrow-down"></div></button>
+<div id="hl-weather"></div>
+
+				</div><!-- #weather widget and facebook icon -->
 				
             </header><!-- #masthead -->
     </div>
+	
 <div class="main-content-area full">
 	
+<?php if ( is_front_page() && is_home() ) : ?>	
+<div class="slider_wrapper">
 <?php echo l_slider_function(); ?>
+</div>	
+<?php else : ?>
+<!-- get futured image instead slider -->
+
+<?php global $post; ?>
+<?php $hl_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(5600,1000), false, '' ); ?>
 	
-    <div class="page-content-wrapper">
-	<div id="content" class="site-content">
+<div id="image_wrapper" style="background-image: url(<?php echo $hl_src[0]; ?> );"></div>
+<?php endif; ?>
+
+	
+<div class="page-content-wrapper">
+<div id="content" class="site-content">

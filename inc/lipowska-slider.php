@@ -30,8 +30,8 @@ function l_slider_function($type='l_slider_function') {
         'post_type' => 'lslider_images',
         'posts_per_page' => 5
     );
-    $result = '<div class="slider_wrapper">';
-    $result .= '<div class="image_slider">';
+//    $result = '<div class="slider_wrapper">';
+    $result = '<div class="image_slider">';
  
     //the loop
     $loop = new WP_Query($args);
@@ -46,7 +46,7 @@ function l_slider_function($type='l_slider_function') {
     $result .= '</div>';
 	$result .='<div id="mainheader"><img class="logo" src="'. get_stylesheet_directory_uri() . '/logo.svg"><h1>Czas na relaks</h1></div>
         	<div class="arrow_wrapper"><img class="arrow-down-button"  src="'. get_stylesheet_directory_uri() . '/ikony/arrow-down.svg"></div>';
-    $result .='</div>';
+//    $result .='</div>';
     return $result;
 }
 
