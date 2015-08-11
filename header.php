@@ -48,7 +48,7 @@
 	
 <div class="main-content-area full">
 	
-<?php if ( is_front_page() && is_home() ) : ?>	
+<?php if ( is_front_page() && !is_home() ) : ?>	
 <div class="slider_wrapper">
 <?php echo l_slider_function(); ?>
 </div>	
