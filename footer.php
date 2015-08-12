@@ -18,7 +18,27 @@
        <div class="page-content-wrapper">   
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-
+			<div id="hl-footer-sidebar1">
+			<?php
+			if(is_active_sidebar('hl-footer-sidebar-1')){
+			dynamic_sidebar('hl-footer-sidebar-1');
+			}
+			?>
+			</div>
+			<div id="hl-footer-sidebar2">
+			<?php
+			if(is_active_sidebar('hl-footer-sidebar-2')){
+			dynamic_sidebar('hl-footer-sidebar-2');
+			}
+			?>
+			</div>
+			<div id="hl-footer-sidebar3">
+			<?php
+			if(is_active_sidebar('hl-footer-sidebar-3')){
+			dynamic_sidebar('hl-footer-sidebar-3');
+			}
+			?>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
        </div>

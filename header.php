@@ -58,7 +58,9 @@
 <?php global $post; ?>
 <?php $hl_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(5600,1000), false, '' ); ?>
 	
-<div id="image_wrapper" style="background-image: url(<?php echo $hl_src[0]; ?> );"></div>
+<div id="image_wrapper" style="background-image: url(<?php echo $hl_src[0]; ?> );">
+			<div class="page-title"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></div>
+</div>
 <?php endif; ?>
 
 	

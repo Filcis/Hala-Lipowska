@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in front-page.php.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -21,8 +21,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'hl' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->
 
