@@ -351,14 +351,16 @@ big {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: rgb(0, 140, 50);
-	padding: 6px 35px 40px;
+	padding: 6px 35px 10px;
 	float:left;
    	clear:left;
 	left: 50%;
 	position: absolute;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -60%);
 	margin: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Elements
@@ -1088,6 +1090,24 @@ position:relative;
 .site-info ul a {
 	color: white;
 	text-decoration: none;
+}
+
+.arrow_wrapper_secondary {
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    z-index: 4;
+}
+
+.arrow-down-button-secondary {
+
+    position: absolute;
+    z-index: 4;
+    cursor:pointer;
+    width:36px;
+    color: rgb(0, 150, 50);
+    left:50%;
+    margin-left:-18px;
 }
 
 
