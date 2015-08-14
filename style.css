@@ -479,8 +479,8 @@ textarea {
 
 .weather-button {
 	margin:18px 40px 0 5px;
-	background-color: rgb(0, 140, 120);
-	border: none;
+	background-color: rgba(0, 140, 50, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.5);;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	font-size: 0.8em;
@@ -556,14 +556,17 @@ a:active {
 
 .main-navigation {
 	width: 60%;
-	background-color: rgba(0, 102, 50, 0.4);
 	height: 70px;
 	float: left;
 }
 
+.main-navigation,
+#widget-wrapper {
+		background-color: rgba(0, 120, 50, 0.5);
+}
+
 #widget-wrapper {
 	width: 15%;
-	background-color: rgba(0, 102, 50, 0.4);
 	height: 70px;
 	float: left;
 }

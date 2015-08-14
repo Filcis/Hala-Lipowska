@@ -38,7 +38,7 @@
                     </nav><!-- #site-navigation -->
 				
 					<div id='widget-wrapper'>
-						<button type="button" class="weather-button">Pogoda<div class="arrow-down"></div></button>
+						<button type="button" class="weather-button">Pogoda</button>
 						<div id="hl-weather"></div>
 
 					</div><!-- #weather widget and facebook icon -->
