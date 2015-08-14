@@ -345,20 +345,24 @@ big {
 }
 
 .entry-title {
-	font-size: 1.2em;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 1);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    color: rgb(0, 140, 50);
-	padding: 6px 35px 10px;
-	float:left;
-   	clear:left;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%, -60%);
-	margin: 0;
+	font-size: 2.0em;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.9);
+    margin:auto;
+    line-height:51px;
+	display:inline-block;
+	padding: 15px 30px;
+	border: solid 1px rgba(255,255,255, 0.5);
+	border-width: 0 0 1px 0;
 }
+
+.read-more {
+	font-size: 1.2em;
+	font-weight: 300;
+ 	color: rgba(255, 255, 255, 0.9);
+}
+
+
 
 
 
@@ -438,42 +442,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
 
 input[type="text"],
 input[type="email"],
@@ -506,6 +475,22 @@ input[type="search"] {
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+
+.weather-button {
+	margin:18px 40px 0 5px;
+	background-color: rgb(0, 140, 120);
+	border: none;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	font-size: 0.8em;
+	border-radius:4px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:5px 8px;
+	text-decoration:none;
+	float: left;
 }
 
 /*--------------------------------------------------------------
@@ -1049,7 +1034,7 @@ position:relative;
     margin:0 auto;
 }
 
-#image_wrapper {
+#image-wrapper {
 	position:relative;
 	height: 600px;
 	width: 100%;
@@ -1059,13 +1044,29 @@ position:relative;
 	background-POSITION: center;
 }
 
-.page-title {
+.image-wrapper-color {
+  width:100%;
+  height:100%;
 
-    bottom: 0;
 
+background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.4)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+
+
+}
+
+.more-wrapper {
+    bottom: 10%;
     margin: auto;
 	width: 100%;
 	position: absolute;
+	text-align: center;
 }
 
 .footer-area {
@@ -1094,7 +1095,7 @@ position:relative;
 
 .arrow_wrapper_secondary {
     position: absolute;
-    bottom: -15px;
+    bottom: 5%;
     width: 100%;
     z-index: 4;
 }
@@ -1160,7 +1161,7 @@ position:relative;
 
 
 @media only screen and (min-height: 950px) {
-    #image_wrapper{
+    #image-wrapper{
         height: 900px;
     }
 }
@@ -1168,3 +1169,20 @@ position:relative;
 
 
 
+
+.page-title {
+	width:100%;
+	position:absolute;
+	bottom: 15%;
+    text-align:center;
+	margin: auto;
+}
+
+.title-wrapper {
+	width: 
+}
+
+#hl-weather {
+	position: absolute;
+	top: 60px;
+}
