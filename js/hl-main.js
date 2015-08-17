@@ -38,6 +38,10 @@ function arrowDown() {
 arrowPrimary.click(arrowDown);
 arrowSecondary.click(arrowDown);
 	
+
+	if ( $( '.pilau-tabs' ).length )
+		$( '.pilau-tabs' ).tabs();
+	
 	
 });
 

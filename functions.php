@@ -194,3 +194,5 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/lipowska-slider.php';
 
 include 'shortcodes.php';
+
+include 'pilau-tabs.php';
