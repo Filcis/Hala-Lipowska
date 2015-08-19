@@ -23,26 +23,36 @@
     <div class="header-area full-wrapper">        
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hl' ); ?></a>
 
-            <header id="masthead" class="site-header main-navigation-wrapper" role="banner">
-                    <div class="site-branding">
+<header id="masthead" class="site-header " role="banner">
+						
+<div class='main-navigation-wrapper'>	
+	
+	<div class="site-branding">
                             
-                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                    <img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo.png">
-                                    </a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+
+		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-inverted.svg">
+
+		</a>
                            
-                    </div><!-- .site-branding -->
+     </div><!-- .site-branding -->
 
-                    <div id='nav-widget-wrapper'><nav id="site-navigation" class="main-navigation" role="navigation">
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
-                    </nav><!-- #site-navigation -->
-				
-					<div id='widget-wrapper'>
-						<button type="button" class="weather-button">Pogoda</button>
-						<div id="hl-weather"></div>
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
+<button type="button" class="weather-button">Pogoda</button>
+		<div id="hl-weather"></div>
+	</nav><!-- #site-navigation -->
+						
 
-					</div><!-- #weather widget and facebook icon --></div>
-				
-            </header><!-- #masthead -->
+<!--
+	<div id='widget-wrapper'>
+		<button type="button" class="weather-button">Pogoda</button>
+		<div id="hl-weather"></div>
+	</div> #weather widget and facebook icon 
+-->
+	
+</div>			
+</header><!-- #masthead -->
     </div>
 	
 <div class="main-content-area full">

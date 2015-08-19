@@ -490,7 +490,7 @@ textarea {
 	color:#ffffff;
 	padding:5px 8px;
 	text-decoration:none;
-	float: left;
+	float: right;
 }
 
 /*--------------------------------------------------------------
@@ -528,17 +528,19 @@ a:active {
 --------------------------------------------------------------*/
 
 .site-branding {
-	width: 25%;
-	background-color: #f9f9f9;
+	width: 220px;
+/*	background-color: rgb(245,250,245);*/
 	height: 70px;
 	float: left;
 }
 
-#logo { /*logo positioning*/
-	display: block;
+#logo,
+#logo-tablet,
+#logo-mobile { /*logo positioning*/
 	position: relative;
-	top: 8px;
-	margin: 0 auto;
+	margin: auto;
+	display: block;
+	z-index: 999;
 }
 
 .main-navigation-wrapper {
@@ -555,14 +557,17 @@ a:active {
 
 
 .main-navigation {
-	width: 60%;
 	height: 70px;
-	float: left;
 	text-align: center;
+	float: right;
 }
 
-#nav-widget-wrapper {
-		background-color: rgba(0, 120, 50, 0.5);
+.main-navigation div {
+	display: inline-block;
+}
+
+.main-navigation-wrapper {
+		background-color: rgba(0, 150, 70, 0.7);
 		height: 70px;
 		width: 100%;
 }
@@ -576,7 +581,9 @@ transition: background-color 1s;
 #widget-wrapper {
 	width: 15%;
 	height: 70px;
-	float: left;
+	float: right;
+	z-index: 999;
+	position: relative;
 }
 .main-navigation ul {
 	display: inline-block;
@@ -1183,3 +1190,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 		
 }
 
+
+.branding-wrapper {
+	width: 85%;
+		height: 70px;
+	float: left;
+}
