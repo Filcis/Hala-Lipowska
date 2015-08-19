@@ -31,7 +31,7 @@
                             
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-inverted.svg">
+		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
 
 		</a>
                            
