@@ -39,8 +39,6 @@
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
-<button type="button" class="weather-button">Pogoda</button>
-		<div id="hl-weather"></div>
 	</nav><!-- #site-navigation -->
 						
 
