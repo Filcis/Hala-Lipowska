@@ -38,10 +38,18 @@ function arrowDown() {
 arrowPrimary.click(arrowDown);
 arrowSecondary.click(arrowDown);
 	
+//-------------------------------------------------
+// Change nav transparenvy after scroll
 
-	if ( $( '.pilau-tabs' ).length )
-		$( '.pilau-tabs' ).tabs();
-	
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 5) {
+        $('#nav-widget-wrapper').addClass("scrolling");
+    } else {
+        $('#nav-widget-wrapper').removeClass("scrolling");
+    }
+});
 	
 });
 

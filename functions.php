@@ -145,8 +145,7 @@ function hl_scripts() {
         
 	wp_enqueue_style( 'hl-fonts', '@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);' );
 
-	wp_enqueue_script( 'hl-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-        
+       
 	wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array('jquery'), '', true );
 	
 	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
@@ -195,4 +194,3 @@ require get_template_directory() . '/inc/lipowska-slider.php';
 
 include 'shortcodes.php';
 
-include 'pilau-tabs.php';

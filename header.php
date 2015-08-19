@@ -32,8 +32,7 @@
                            
                     </div><!-- .site-branding -->
 
-                    <nav id="site-navigation" class="main-navigation" role="navigation">
-                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hl' ); ?></button>
+                    <div id='nav-widget-wrapper'><nav id="site-navigation" class="main-navigation" role="navigation">
                             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
                     </nav><!-- #site-navigation -->
 				
@@ -41,7 +40,7 @@
 						<button type="button" class="weather-button">Pogoda</button>
 						<div id="hl-weather"></div>
 
-					</div><!-- #weather widget and facebook icon -->
+					</div><!-- #weather widget and facebook icon --></div>
 				
             </header><!-- #masthead -->
     </div>

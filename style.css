@@ -558,11 +558,19 @@ a:active {
 	width: 60%;
 	height: 70px;
 	float: left;
+	text-align: center;
 }
 
-.main-navigation,
-#widget-wrapper {
+#nav-widget-wrapper {
 		background-color: rgba(0, 120, 50, 0.5);
+		height: 70px;
+		width: 100%;
+}
+
+.scrolling {
+background-color: rgba(0, 150, 70, 1) !important;
+-webkit-transition: background-color 1s;
+transition: background-color 1s;
 }
 
 #widget-wrapper {
@@ -570,23 +578,13 @@ a:active {
 	height: 70px;
 	float: left;
 }
-
-/* default _s settings
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;	
-	width: 100%;
-}
-*/
-
 .main-navigation ul {
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
 	list-style: none;
 	height: 100%;
-	width: 520px;
 	white-space: nowrap;
+	padding: 0;
+	margin: 0;
 }
 
 .main-navigation li {
@@ -609,40 +607,6 @@ a:active {
 	background-color: rgba(0, 102, 50, 0.3);
 }
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-}
-
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
@@ -659,19 +623,6 @@ a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -693,6 +644,35 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/*UL SHORTCODES CUSTOMIZED SUBMENU*/
+
+.hl-tabs.su-tabs {
+	background-color: #fff;
+	border: none;
+}
+
+.hl-tabs.su-tabs .su-tabs-pane {
+	font-size: 1rem;
+	padding: 0;
+}
+
+.hl-tabs.su-tabs .su-tabs-nav {
+	text-align: center;	
+	line-height: 2rem;
+}
+
+.hl-tabs.su-tabs .su-tabs-nav span {
+	border-right: 1px solid lightgray;
+    font-size: 1rem;
+	line-height: 2rem;
+    padding: 2px 10px;
+	color: rgb(0, 150, 50)
+}
+
+.hl-tabs.su-tabs .su-tabs-nav span:last-child {
+	border-right: none;
 }
 
 /*--------------------------------------------------------------
@@ -1170,9 +1150,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 
-
-
-
 .page-title {
 	width:100%;
 	position:absolute;
@@ -1191,4 +1168,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 
-.ui-tabs-hide { display: none; }
+/* MEDIA QUERIES */
+/* tablet */
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 860px)
+	{
+		
+.main-navigation a {
+	font-size: 0.8em;
+	padding: 0 15px;
+}
+		
+}
+
