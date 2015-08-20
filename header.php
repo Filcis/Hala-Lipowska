@@ -53,7 +53,7 @@
 </header><!-- #masthead -->
     </div>
 	
-<div class="main-content-area full">
+
 	
 <?php if ( is_front_page() && !is_home() ) : ?>	
 <div class="slider-wrapper">
@@ -64,9 +64,6 @@
 <h3 class="read-more">Czas na relaks</h3>
 <img class="arrow-down-button-secondary" src="<?php echo get_stylesheet_directory_uri();?>/ikony/arrow-down-secondary.svg">
 </div>
-
-
-	
 </div>	
 <?php else : ?>
 <!-- get futured image instead slider -->
@@ -74,6 +71,6 @@
 
 <?php endif; ?>
 
-	
+<div class="main-content-area full">	
 <div class="page-content-wrapper">
 <div id="content" class="site-content">

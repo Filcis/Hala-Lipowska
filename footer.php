@@ -10,9 +10,9 @@
  */
 
 ?>
-</div>
+		</div>
     </div>
-	</div><!-- #content -->
+</div><!-- #content -->
         
 <div class="footer-area full-wrapper">
        <div class="page-content-wrapper">   
