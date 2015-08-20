@@ -30,14 +30,6 @@ $(window).load(function(){
 		},7000);
 })
 
-$(document).ready(function(){
-//    var a = $(window).height() - $('#menu').height();
-    var a = $(window).height();
-//    $(".slider-wrapper").css('height', a);
-//	$("#image-wrapper").css('height', a);
 
-});
-
-	
 });
 
