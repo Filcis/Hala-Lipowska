@@ -1036,7 +1036,8 @@ object {
 
 #image-wrapper {
 	position:relative;
-	height: 600px;
+	min-height: 600px;
+	height: 100%;
 	width: 100%;
 	margin: 0;
 	background-repeat: no-repeat ;
@@ -1162,7 +1163,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 @media only screen and (min-height: 950px) {
     #image-wrapper{
-        height: 900px;
+        min-height: 900px;
+		height: 100%;
     }
 }
 
