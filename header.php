@@ -31,7 +31,7 @@
                             
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-inverted.svg">
+		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
 
 		</a>
                            
@@ -39,8 +39,6 @@
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
-<button type="button" class="weather-button">Pogoda</button>
-		<div id="hl-weather"></div>
 	</nav><!-- #site-navigation -->
 						
 
@@ -55,11 +53,17 @@
 </header><!-- #masthead -->
     </div>
 	
-<div class="main-content-area full">
+
 	
 <?php if ( is_front_page() && !is_home() ) : ?>	
 <div class="slider-wrapper">
 <?php echo l_slider_function(); ?>
+	
+<div id="logo-wrapper"><img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/logo.svg"></div>
+<div class="page-title"><h1 class="entry-title">Hala Lipowska Schronisko PTTK</h1>
+<h3 class="read-more">Czas na relaks</h3>
+<img class="arrow-down-button-secondary" src="<?php echo get_stylesheet_directory_uri();?>/ikony/arrow-down-secondary.svg">
+</div>
 </div>	
 <?php else : ?>
 <!-- get futured image instead slider -->
@@ -67,6 +71,6 @@
 
 <?php endif; ?>
 
-	
+<div class="main-content-area full">	
 <div class="page-content-wrapper">
 <div id="content" class="site-content">
