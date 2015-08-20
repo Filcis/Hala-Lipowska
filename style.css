@@ -1035,7 +1035,6 @@ object {
 }
 
 #image-wrapper {
-	position:relative;
 	min-height: 600px;
 	height: 100%;
 	width: 100%;
@@ -1251,6 +1250,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	padding: 0;
 	line-height: normal;
 /*	color: rgb(60,60,60);*/
+}
+	  
+/*
+.logo {
+	width: 7.5em;
+}
+*/
+
+#logo-wrapper{
+	display: none;
 }
 
 }

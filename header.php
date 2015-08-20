@@ -56,9 +56,10 @@
 
 	
 <?php if ( is_front_page() && !is_home() ) : ?>	
+<!-- get slider logo and headlines -->
 <?php get_template_part( 'header-home'); ?>
 <?php else : ?>
-<!-- get futured image instead slider -->
+<!-- get futured image and headlines -->
 <?php get_template_part( 'header-page'); ?>
 
 <?php endif; ?>

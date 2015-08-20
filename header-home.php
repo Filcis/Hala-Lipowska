@@ -1,4 +1,5 @@
-<div class="slider-wrapper image-wrapper-color">
+<?php if (!is_mobile()) : ?>
+<div class="slider-wrapper">
 <?php echo l_slider_function(); ?>
 	
 <div id="logo-wrapper"><img class="logo" src="<?php echo get_stylesheet_directory_uri();?>/logo.svg"></div>
@@ -7,3 +8,6 @@
 <img class="arrow-down-button-secondary" src="<?php echo get_stylesheet_directory_uri();?>/ikony/arrow-down-secondary.svg">
 </div>
 </div>	
+
+<?php else : ?>
+<?php endif; ?>
