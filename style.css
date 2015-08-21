@@ -94,7 +94,8 @@ template {
 }
 
 a {
-	background-color: transparent;
+	text-decoration: none;
+	color: rgb(0,140,50);
 }
 
 a:active,
@@ -290,6 +291,12 @@ h6 {
 	clear: both;
 }
 
+h2 {
+	color: rgb(0, 140, 50);
+	font-weight: 400;
+	margin-bottom: 1.2em;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -406,11 +413,12 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 0.5em 0;
+	padding-left: 0;
 }
 
 ul {
-	list-style: disc;
+	list-style:  outside url("ikony/bullet.svg") disc;
 }
 
 ol {
@@ -503,26 +511,26 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+
 }
 
 a:visited {
-	color: purple;
+
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+
 }
 
 a:focus {
-	outline: thin dotted;
+
 }
 
 a:hover,
 a:active {
-	outline: 0;
+
 }
 
 /*--------------------------------------------------------------
@@ -1171,6 +1179,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     width: 12.5%;
 }
 
+.site-content .su-row {
+	margin-bottom: 70px;
+}
 
 @media only screen and (min-height: 950px) {
     #image-wrapper{
