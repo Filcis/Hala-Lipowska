@@ -65,5 +65,5 @@
 <?php endif; ?>
 
 <div class="main-content-area full">	
-<div class="page-content-wrapper">
+<div class="page-content-wrapper main">
 <div id="content" class="site-content">

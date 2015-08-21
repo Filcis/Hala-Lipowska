@@ -92,6 +92,14 @@ function hl_content_width() {
 }
 add_action( 'after_setup_theme', 'hl_content_width', 0 );
 
+//** remove automating wrapping around img */
+
+function img_unautop($pee) {
+    $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="figure">$1</div>', $pee);
+    return $pee;
+}
+add_filter( 'the_content', 'img_unautop', 30 );
+
 /**
  * Register widget area.
  *
