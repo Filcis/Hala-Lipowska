@@ -507,6 +507,25 @@ textarea {
 # Navigation & Branding
 --------------------------------------------------------------*/
 
+.tint {
+	cursor: pointer;
+	position: relative;
+}
+
+.tint .figure:before {   
+	background: rgba(235, 255, 235, 0.5) none repeat scroll 0 0;
+    bottom: 3px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s; } 
+.tint .figure:hover:before { background: none; }
+
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/

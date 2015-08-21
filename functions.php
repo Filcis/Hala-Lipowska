@@ -46,7 +46,7 @@ function hl_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'hl' ),
 	) );
-
+	
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -199,6 +199,4 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/lipowska-slider.php';
-
-include 'shortcodes.php';
 
