@@ -162,7 +162,9 @@ function hl_scripts() {
 	
 	wp_enqueue_script( 'yr_weather', get_template_directory_uri() . '/js/yr_weather.js', array(), '', true );
 	
-	
+wp_register_script( 'maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCG1Oj2yNOjdlrI-pzgcJcCwBIsyq8xyOI &callback=initMap', array(), null, true );
+wp_enqueue_script('maps');
+wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
