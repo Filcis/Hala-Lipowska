@@ -45,9 +45,9 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 5) {
-        $('#nav-widget-wrapper').addClass("scrolling");
+        $('.main-navigation-wrapper').addClass("scrolling");
     } else {
-        $('#nav-widget-wrapper').removeClass("scrolling");
+        $('.main-navigation-wrapper').removeClass("scrolling");
     }
 });
 	

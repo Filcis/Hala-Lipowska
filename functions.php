@@ -41,7 +41,7 @@ function hl_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-
+	
 	// MENUS
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'hl' ),
@@ -159,8 +159,6 @@ function hl_scripts() {
 	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
 
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	
-	wp_enqueue_script( 'yr_weather', get_template_directory_uri() . '/js/yr_weather.js', array(), '', true );
 	
 wp_register_script( 'maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCG1Oj2yNOjdlrI-pzgcJcCwBIsyq8xyOI &callback=initMap', array(), null, true );
 wp_enqueue_script('maps');

@@ -8,18 +8,9 @@
 			<p class="meta"><?php echo get_the_author_meta('nickname');?> | <?php the_date( 'd-m-Y' );?></p>
 			<hr>
 <?php if ( has_post_thumbnail() ): ?>
-<div class="post-thumb"><?php the_post_thumbnail(); ?></div>
-<?php endif; ?>	
-			
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+<div class="post-thumb-home"><?php the_post_thumbnail('thumbnail'); ?></div>
+<?php endif; ?>			
+			<p> <?php the_excerpt(); ?></p>
 			<?php endwhile; ?>
 			<?php endif; ?>
 

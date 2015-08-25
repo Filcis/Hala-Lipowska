@@ -51,19 +51,17 @@
 	
 </div>			
 </header><!-- #masthead -->
-    </div>
-	
-
+</div>
 	
 <?php if ( is_front_page() && !is_home() ) : ?>	
 <!-- get slider logo and headlines -->
 <?php get_template_part( 'header-home'); ?>
 <?php elseif (is_page( 'Kontakt')) : ?>
 <?php get_template_part( 'header-contact'); ?>
+<?php elseif (is_home() || !is_page()) : ?>
 <?php else : ?>
 <!-- get futured image and headlines -->
 <?php get_template_part( 'header-page'); ?>
-
 <?php endif; ?>
 
 <div class="main-content-area full">	
