@@ -374,3 +374,5 @@ new google.maps.LatLng(49.531197,19.260707)
   redPath.setMap(map);
 	
 }
+
+window.onload = initMap();

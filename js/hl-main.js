@@ -8,10 +8,6 @@ jQuery(document).ready(function($) {
     // and other libraries also using $ will not be accessible under this shortcut
 
 
-$("#hl-weather").hide();
-    $(".weather-button").click(function(){
-        $("#hl-weather").toggle(500);
-});
 	
 var arrowPrimary = $('.arrow-down-button');
 var arrowSecondary = $('.arrow-down-button-secondary');
