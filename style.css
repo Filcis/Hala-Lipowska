@@ -74,6 +74,10 @@ section,
 summary {
 	display: block;
 }
+figure {
+	margin: 0;
+	position: relative;
+}
 
 audio,
 canvas,
@@ -154,10 +158,6 @@ img {
 
 svg:not(:root) {
 	overflow: hidden;
-}
-
-figure {
-	margin: 1em 40px;
 }
 
 hr {
@@ -310,7 +310,7 @@ p {
 .widget-area h1 h4,
 .widget-area h1 h5,
 .widget-area h1 p,
-li {
+.widget-area li a {
 	color: rgb(90,90,90);
 }
 .widget-area {
@@ -528,6 +528,13 @@ table {
 # Forms
 --------------------------------------------------------------*/
 
+.cscfForm p {
+	margin-top: 0;
+}
+
+.cscfForm label {
+	font-weight: 400;
+}
 
 input[type="text"],
 input[type="email"],
@@ -582,24 +589,28 @@ textarea {
 # Navigation & Branding
 --------------------------------------------------------------*/
 
-.tint {
+.featured-activities img {
 	cursor: pointer;
 	position: relative;
+	opacity: 0.5;
+	-webkit-transtion: all 1.2s;
+	transition: all 1.2s;
 }
 
-.tint .figure:before {   
-	background: rgba(235, 255, 235, 0.5) none repeat scroll 0 0;
-    bottom: 3px;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: all 0.3s linear 0s; } 
-.tint .figure:hover:before { background: none; }
+.featured-activities {
+	text-align: center;
+}
 
+/*
+.featured-activities span {
+	position: relative;
+	top:-50px;
+}
+*/
 
+.featured-activities img:hover{
+	opacity: 1;
+}
 
 /*--------------------------------------------------------------
 ## Links
@@ -981,13 +992,18 @@ object {
 	max-width: 100%;
 }
 
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 0 auto;
-}
+
 
 .wp-caption-text {
 	text-align: center;
+}
+
+.featured-activities .wp-caption-text {
+	text-align: center;
+	position: absolute;
+	background-color: #fff;
+	top: 50%;
+	width: 100%;
 }
 
 .wp-caption .wp-caption-text {
@@ -1188,7 +1204,7 @@ object {
 #map {
 	height: 400px;
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .historia {

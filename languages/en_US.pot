@@ -15,7 +15,7 @@ msgstr ""
 #: header-home.php:6
 #@ _s
 msgid "Hala Lipowska Schronisko PTTK"
-msgstr ""
+msgstr "Hala Lipowska PTTK Lodge"
 
 #: 404.php:15
 #@ _s

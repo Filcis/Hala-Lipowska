@@ -162,7 +162,7 @@ function hl_scripts() {
 	if ( is_page('warunki') ) {
 		wp_enqueue_script( 'yr-weather', get_template_directory_uri() . '/js/yr_weather.js', array(), '', true );
 	}
-	if ( is_page('Mapa') ) {
+	if ( is_page('Mapa') || is_page('Kontakt' )) {
 	wp_enqueue_script('google-maps' , 'http://maps.google.com/maps/api/js?sensor=true' , false , '3');
 	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
 	}
