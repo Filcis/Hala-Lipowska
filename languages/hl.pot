@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: header-home.php:6
-#@ _s
+#@ hl
 msgid "Hala Lipowska Schronisko PTTK"
 msgstr ""
 
