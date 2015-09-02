@@ -6,9 +6,16 @@
 jQuery(document).ready(function($) {
     // Inside of this function, $() will work as an alias for jQuery()
     // and other libraries also using $ will not be accessible under this shortcut
-
-
 	
+$('.tlt').textillate({ in: 
+	{ effect: 'fadeInLeft', 
+	  delay: 50,
+	  delayScale: 1,
+	}
+});
+
+
+
 var arrowPrimary = $('.arrow-down-button');
 var arrowSecondary = $('.arrow-down-button-secondary');
 	
@@ -27,7 +34,7 @@ setInterval(function() {
 	
 function arrowDown() {
     $('html, body').animate({
-         scrollTop: $(window).height() - 72
+         scrollTop: $(window).height() - 60
     }, 1500);
 }
 	
@@ -45,7 +52,13 @@ $(window).scroll(function() {
     } else {
         $('.main-navigation-wrapper').removeClass("scrolling");
     }
-});
+
+//------------------------------------------------		
+    var height = $(window).height();
+
+    $('.page-title').css({
+        'opacity': ((height - scroll) / height)
+    }); 
 	
 });
-
+});

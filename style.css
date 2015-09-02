@@ -154,8 +154,8 @@ sub {
 
 img {
 	border: 0;
+	overflow: hidden;
 }
-
 svg:not(:root) {
 	overflow: hidden;
 }
@@ -395,6 +395,7 @@ big {
 
 .read-more {
 	font-size: 1.2em;
+	font-size: 1.8vw;
 	font-weight: 300;
  	color: rgba(255, 255, 255, 0.9);
 }
@@ -741,6 +742,23 @@ transition: background-color 1s;
 .main-navigation .current_page_ancestor > a {
 }
 
+.facebook-icon {
+	background: url(ikony/Facebook.svg) no-repeat center;
+	width: 25px;
+	margin: 0 20px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.facebook-icon:hover {
+	background: url(ikony/Facebook-active.svg) no-repeat center;
+}
+
+.facebook-icon a:hover {
+	background-color: transparent;
+}
+
 /* Small menu. */
 
 .site-main .comment-navigation,
@@ -763,6 +781,29 @@ transition: background-color 1s;
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/* latest posts menu */
+
+#latest-posts-wrapper {
+/*	border: 1px solid rgba(0, 140, 70, 0.5);*/
+	padding: 25px;
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+#latest-posts ul li {
+	list-style: none;
+	background-color: rgba(0, 140, 70, 0.5);
+	margin-bottom: 20px;
+}
+
+#latest-posts ul li a {
+	display: block;
+	color: #fff;
+	margin: 0px; padding: 20px;
+	width: 100%; height: 100%;
 }
 
 /*UL SHORTCODES CUSTOMIZED SUBMENU*/
@@ -1103,7 +1144,7 @@ object {
     padding-bottom: 20px;
 }
 #logo-wrapper{
-    z-index: 3;
+    z-index: 5;
     text-align: center;
     position: absolute;
     top: 35%;
@@ -1222,21 +1263,26 @@ object {
     text-align: center;
 }
 
+.historia-img img {
+	border: 1px solid lightgray;
+	margin-bottom: 30px;
+}
+
 .image-wrapper-color {
+	position: absolute;
+	top: 0;
+	left: 0;
   width:100%;
   height:100%;
-
-
-background: rgba(0,0,0,0);
-background: -moz-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.4)));
-background: -webkit-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
-background: -o-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
-background: -ms-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
-background: linear-gradient(to bottom, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-
-
+	z-index: 4;
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.4)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 39%, rgba(0,0,0,0.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
 
 .more-wrapper {
@@ -1246,6 +1292,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	position: absolute;
 	text-align: center;
 }
+
+
 
 .footer-area {
 	height: 300px;
@@ -1480,3 +1528,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	max-height: 450px;
 	overflow: hidden;
 }
+
+.parallax-back {
+	background-attachment: fixed;
+}
+
+#trigger {
+	position: absolute;
+	bottom: 25%;
+	width: 100%;
+	height: 1px;
+}
+
+/*Javascript progressive enhancement styles*/
+
+.no-js .lazy-hidden {
+	display: none;
+}
+
+.no-js .su-animate {
+	visibility: visible !important;
+}
+
+/*
+.js .image-slider {
+		display: none;
+}*/

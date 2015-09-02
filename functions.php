@@ -153,11 +153,16 @@ function hl_scripts() {
         
 	wp_enqueue_style( 'hl-fonts', '@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);' );
 
+	wp_enqueue_script( 'hl-nojs', get_template_directory_uri() . '/js/hl-nojs.js', '', '', false );
+	
+	wp_enqueue_script( 'lettering', get_template_directory_uri() . '/js/jquery.lettering.js', array('jquery'), '', true );
+	
+	wp_enqueue_script( 'textillate', get_template_directory_uri() . '/js/jquery.textillate.js', array('jquery'), '', true );
        
 	wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array('jquery'), '', true );
 	
 	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
-
+	
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	if ( is_page('warunki') ) {
 		wp_enqueue_script( 'yr-weather', get_template_directory_uri() . '/js/yr_weather.js', array(), '', true );

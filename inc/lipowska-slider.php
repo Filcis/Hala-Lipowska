@@ -26,11 +26,11 @@ add_action('init', 'l_slider_init');
 
 
 function l_slider_function($type='l_slider_function') {
+	global $post;
     $args = array(
         'post_type' => 'lslider_images',
         'posts_per_page' => 5
     );
-//    $result = '<div class="slider_wrapper">';
     $result = '<div class="image_slider">';
  
     //the loop
@@ -39,8 +39,7 @@ function l_slider_function($type='l_slider_function') {
         $loop->the_post();
  
         $the_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), $type);
-		$result .='<div style="background-image: url('. $the_url[0] .');"></div>';
-//        $result .='<img title="'.get_the_title().'" src="' . $the_url[0] . '" data-thumb="' . $the_url[0] . '" alt=""/>';
+		$result .='<div class="parallax-back" style="background-image: url('. $the_url[0] .');"></div>';
     }
 	
     $result .= '</div>';
