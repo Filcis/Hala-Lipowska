@@ -1,0 +1,222 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: $primary-color;
+	&:visited {
+	}
+	&:hover {
+	}
+	&:focus{ 
+	}
+	&:active{ 
+	}
+}
+
+/*--------------------------------------------------------------
+## Menus and branding
+--------------------------------------------------------------*/
+
+.site-branding {
+	width: 240px;
+	background-color: rgb(245,250,245);
+	height: 60px;
+	float: left;
+}
+
+#logo,
+#logo-tablet,
+#logo-mobile { /*logo positioning*/
+	position: relative;
+	margin: auto;
+	display: block;
+	z-index: 999;
+}
+
+.main-navigation-wrapper {
+	height: 60px;
+	background-color: transparentize($primary-color, 0.3);
+	border-bottom: 1px solid lightgray;
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+
+.main-navigation {
+	height: 60px;
+	text-align: center;
+	float: right;
+	ul {
+		//move to mobile styles
+		display: inline-block;
+		list-style: none;
+		height: 100%;
+		//--move to mobile styles
+		white-space: nowrap;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		display: block;
+		height: 100%;
+		float:left;
+	}
+	a {
+		display: block;
+		padding: 0 25px;
+		text-decoration: none;
+		font-size: $small;
+		color: white;
+		line-height: 58px;
+	}
+}
+
+.scrolling {
+background-color: $primary-color !important;
+-webkit-transition: background-color 1s;
+transition: background-color 1s;
+}
+
+.main-navigation-wrapper { 
+	a:hover {
+		background-color: lighten($primary-color,1);
+	}
+	&.scrolling a:hover  {
+		background-color: darken($primary-color,3); 		
+	}
+}
+
+
+
+.facebook-icon {
+	background: url(ikony/Facebook.svg) no-repeat center;
+	width: 25px;
+	margin: 0 20px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	&:hover {
+		background: url(ikony/Facebook-active.svg) no-repeat center;
+	}
+	& a:hover {
+		background-color: transparent;
+	}
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+}
+
+/* Small menu. */
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/* latest posts menu */
+
+#latest-posts-wrapper {
+/*	border: 1px solid rgba(0, 140, 70, 0.5);*/
+	padding: 25px;
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+#latest-posts ul li {
+	list-style: none;
+	background-color: transparentize($primary-color, 0.5);
+	margin-bottom: 20px;
+}
+
+#latest-posts ul li a {
+	display: block;
+	color: #fff;
+	margin: 0px; padding: 20px;
+	width: 100%; height: 100%;
+}
+
+/*UL SHORTCODES OVERWRITES FOR TABBED SUBMENU*/
+
+.hl-tabs.su-tabs {
+	background-color: #fff;
+	border: none;
+}
+
+.hl-tabs.su-tabs .su-tabs-pane {
+	font-size: $base;
+	padding: 0;
+}
+
+.hl-tabs.su-tabs .su-tabs-nav {
+	text-align: center;	
+	line-height: 2rem;
+	margin-bottom: 50px;
+}
+
+.hl-tabs.su-tabs .su-tabs-nav .su-tabs-current {
+	text-decoration: underline;
+}
+
+.hl-tabs.su-tabs .su-tabs-nav span {
+	border-right: 1px solid lightgray;
+    font-size: $medium;
+	line-height: 2rem;
+    padding: 2px 10px;
+	color: rgb(0, 150, 50)
+}
+
+.hl-tabs.su-tabs .su-tabs-nav span:last-child {
+	border-right: none;
+}
+
+//featured activities under posts
+
+.featured-activities img {
+	cursor: pointer;
+	position: relative;
+	opacity: 0.5;
+	-webkit-transtion: all 1.2s;
+	transition: all 1.2s;
+}
+
+.featured-activities {
+	text-align: center;
+}
+
+.featured-activities img:hover{
+	opacity: 1;
+}

@@ -1,0 +1,118 @@
+.historia-wrapper p {  //sets margin of spans to 0 (wp wraps them in p tags)
+	margin: 0 auto;
+}
+.historia p {
+	margin: 10px auto;
+}
+.vertical-line {
+    background-color: lightgray;
+    height: 60px;
+    margin: 0 auto;
+    width: 1px;
+	display: block;
+}
+.icon {
+    border: 1px solid $primary-color;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 10px auto;
+    padding: 2px;
+    vertical-align: middle;
+}
+.paragraph-with-icons p {
+	padding-left: 50px;
+	margin-top: 0;
+}
+.hl-featured hr {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #ccc;
+    border-image: none;
+    border-style: none none dashed;
+    border-width: 0 0 2px;
+    color: #f9f9f9;
+    margin: 0 auto;
+	width: 70%;	
+	background-color: #fff;
+}
+
+.hl-featured p {
+    line-height: 1.5em;
+    margin: 15px 0;
+}
+.hl-featured h4 {
+	margin-top: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 0.5em 0;
+	padding-left: 0;
+}
+
+ul {
+	list-style:  outside url("ikony/bullet.svg") disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}

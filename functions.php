@@ -145,14 +145,23 @@ function hl_widgets_init() {
 }
 add_action( 'widgets_init', 'hl_widgets_init' );
 
+function wpb_add_google_fonts() {
+
+
+
+wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300&subset=latin-ext');
+
+wp_enqueue_style( 'wpb-googleFonts');
+
+}
+
+add_action('wp_print_styles', 'wpb_add_google_fonts');
 /**
  * Enqueue scripts and styles.
  */
 function hl_scripts() {
 	wp_enqueue_style( 'hl-style', get_stylesheet_uri() );
         
-	wp_enqueue_style( 'hl-fonts', '@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);' );
-
 	wp_enqueue_script( 'hl-nojs', get_template_directory_uri() . '/js/hl-nojs.js', '', '', false );
 	
 	wp_enqueue_script( 'lettering', get_template_directory_uri() . '/js/jquery.lettering.js', array('jquery'), '', true );
@@ -164,9 +173,7 @@ function hl_scripts() {
 	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
 	
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	if ( is_page('warunki') ) {
-		wp_enqueue_script( 'yr-weather', get_template_directory_uri() . '/js/yr_weather.js', array(), '', true );
-	}
+
 	if ( is_page('Mapa') || is_page('Kontakt' )) {
 	wp_enqueue_script('google-maps' , 'http://maps.google.com/maps/api/js?sensor=true' , false , '3');
 	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
