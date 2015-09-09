@@ -164,7 +164,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	 
 .main-navigation div {
 	width: 100%;
-	background-color: rgb(0,160,70);
+	background-color: $primary-color;
 	padding: 10px 0;
 } 
 	 
@@ -213,11 +213,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	max-height: 450px;
 	overflow: hidden;
 }
-
-.parallax-back {
-	background-attachment: fixed;
-}
-
 #trigger {
 	position: absolute;
 	bottom: 25%;

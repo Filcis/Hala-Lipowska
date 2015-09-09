@@ -39,7 +39,7 @@ function l_slider_function($type='l_slider_function') {
         $loop->the_post();
  
         $the_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), $type);
-		$result .='<div class="parallax-back" style="background-image: url('. $the_url[0] .');"></div>';
+		$result .='<div style="background-image: url('. $the_url[0] .');"></div>';
     }
 	
     $result .= '</div>';

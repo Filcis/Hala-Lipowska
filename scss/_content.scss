@@ -160,20 +160,20 @@ object {
     margin:0;
     width:100%;
     z-index:-1;
+	div {
+		height: inherit;
+		position:fixed;
+		-webkit-transform: translateZ(0);
+		left:0;
+		top:0px;
+		width:100%;
+		background-size:cover;
+		background-POSITION: center;
+	}
+	div.active {
+		z-index:3;
+	}
 }
-
-.image_slider div {
-    height: inherit;
-    position:absolute;
-    left:0;
-    top:0px;
-    width:100%;
-/*    z-index:1;*/
-    background-size:cover;
-    background-POSITION: center;
-}
-
-.image_slider div.active{z-index:3}
 
 #mainheader {
     z-index: 3;

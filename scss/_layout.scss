@@ -1,6 +1,8 @@
 
 .main-content-area {
 	background-color: rgb(245,245,245);
+	position: relative;
+	z-index: 5;
 }
 
 .page-content-wrapper {
@@ -103,6 +105,8 @@
 	height: 300px;
 	width: 100%;
 	background-color: $primary-color;
+		position: relative;
+	z-index: 5;
 }
 
 #hl-footer-sidebar1,

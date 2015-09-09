@@ -52,6 +52,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Font Sizes
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
@@ -901,19 +904,17 @@ object {
   margin: 0;
   width: 100%;
   z-index: -1; }
-
-.image_slider div {
-  height: inherit;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 100%;
-  /*    z-index:1;*/
-  background-size: cover;
-  background-POSITION: center; }
-
-.image_slider div.active {
-  z-index: 3; }
+  .image_slider div {
+    height: inherit;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    left: 0;
+    top: 0px;
+    width: 100%;
+    background-size: cover;
+    background-POSITION: center; }
+  .image_slider div.active {
+    z-index: 3; }
 
 #mainheader {
   z-index: 3;
@@ -968,7 +969,9 @@ object {
 # Layout
 --------------------------------------------------------------*/
 .main-content-area {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 5; }
 
 .page-content-wrapper {
   width: 100%;
@@ -1057,7 +1060,9 @@ object {
 .footer-area {
   height: 300px;
   width: 100%;
-  background-color: #008c46; }
+  background-color: #008c46;
+  position: relative;
+  z-index: 5; }
 
 #hl-footer-sidebar1,
 #hl-footer-sidebar2,
@@ -1171,7 +1176,7 @@ object {
 
   .main-navigation div {
     width: 100%;
-    background-color: #00a046;
+    background-color: #008c46;
     padding: 10px 0; }
 
   .main-navigation ul {
@@ -1208,9 +1213,6 @@ object {
 .post-thumb-home {
   max-height: 450px;
   overflow: hidden; }
-
-.parallax-back {
-  background-attachment: fixed; }
 
 #trigger {
   position: absolute;

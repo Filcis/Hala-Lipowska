@@ -145,9 +145,11 @@ function hl_widgets_init() {
 }
 add_action( 'widgets_init', 'hl_widgets_init' );
 
+/**
+ * Register font.
+ */
+
 function wpb_add_google_fonts() {
-
-
 
 wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300&subset=latin-ext');
 
