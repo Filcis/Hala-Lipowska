@@ -22,15 +22,25 @@
 	background-color: rgb(255,255,255);
 }
 
-#image-wrapper {
-	min-height: 600px;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	background-repeat: no-repeat ;
-	background-size:cover ;
-	background-POSITION: center;
+.image-wrapper {
+    height: 100%;
+    padding:0;
+    margin:0;
+    width:100%;
+    z-index:-1;
+	.bgimage {
+		height: inherit;
+		position:fixed;
+		-webkit-transform: translateZ(0);
+		left:0;
+		top:0px;
+		width:100%;
+		background-size:cover;
+		background-POSITION: center;
+	}
+	
 }
+
 .site-content {
 	padding-top: 50px;
 	padding-bottom: 50px;
