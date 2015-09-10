@@ -33,15 +33,16 @@
 	<div class="site-branding">
                             
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-
-		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
-
+			
+			<?php if(!is_mobile()) : ?>
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
+			<?php else : ?>
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile.svg">
+			<?php endif; ?>
 		</a>
-		
-		<button id="menu-toggle" class="is-displayed-mobile">menu</button>
-                           
+		                        
      </div><!-- .site-branding -->
-	
+			<button id="menu-toggle" class="is-displayed-mobile">menu</button>
 
 	<nav id="site-navigation" class="main-navigation menu-collapsed" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
