@@ -46,6 +46,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "scss/variables";
 
+@import "scss/mqueries";
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -117,85 +119,47 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	margin-bottom: 70px;
 }
 
-@media only screen and (min-height: 950px) {
-    #image-wrapper{
-        min-height: 900px;
-		height: 100%;
-    }
-}
-
-/* MEDIA QUERIES */
-/* tablet */
-
-@media only screen 
-  and (min-width: 504px) 
-  and (max-width: 860px)
-
-{
-		
-.main-navigation a {
-	font-size: 0.8em;
-	padding: 0 15px;
-}
-		
-.site-branding {
-	width: 160px;
-}
-		
-}
-
-@media only screen 
-  and (max-width: 520px) {
+  
+//.main-navigation-wrapper {
+//	height: inherit;
+//	z-index: 9999;
+//}
+//
+//.main-navigation {
+//	display: block;
+//	width: 100%;
+//} 
+//	 
+//.main-navigation div {
+//	width: 100%;
+//	background-color: $primary-color;
+//	padding: 10px 0;
+//} 
+//	 
+//.main-navigation ul {
+//	width: 93%;
+//}
+//	  
+//.main-navigation ul li {
+//	width: 28%;
+//	display: block;
+//	padding: 2px 0;
+//	margin: 8px 2% 0 2%;
+//	border-radius: 5px;
+//	border: 1px solid rgb(200,200,200);
+//	float: left;
+//}
 	  
-.site-branding {
-	width: 100%;
-} 
-	  
-.main-navigation-wrapper {
+  
+//#image-wrapper{
+//	min-height: 100px;
+//}
+//	  
+//#logo-wrapper{
+//	display: none;
+//}
+//
 
-	height: inherit;
-	z-index: 9999;
-}
-
-.main-navigation {
-	display: block;
-	width: 100%;
-} 
-	 
-.main-navigation div {
-	width: 100%;
-	background-color: $primary-color;
-	padding: 10px 0;
-} 
-	 
-.main-navigation ul {
-	width: 93%;
-}
-	  
-.main-navigation ul li {
-	width: 28%;
-	display: block;
-	padding: 2px 0;
-	margin: 8px 2% 0 2%;
-	border-radius: 5px;
-	border: 1px solid rgb(200,200,200);
-	float: left;
-}
-	  
-.main-navigation a {
-	padding: 0;
-	line-height: normal;
-}
-	  
-#image-wrapper{
-	min-height: 100px;
-}
-	  
-#logo-wrapper{
-	display: none;
-}
-
-}
 
 .meta {
 	font-size: 0.8em;

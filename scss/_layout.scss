@@ -41,6 +41,13 @@
 	
 }
 
+@media only screen and (min-height: 950px) {
+    #image-wrapper{
+        min-height: 900px;
+		height: 100%;
+    }
+}
+
 .site-content {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -129,7 +136,7 @@
 }
 
 .site-info {
-	padding: 30px 0;
+
 	color: white;
 }
 

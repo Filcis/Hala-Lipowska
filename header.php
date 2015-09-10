@@ -37,10 +37,13 @@
 		<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
 
 		</a>
+		
+		<button id="menu-toggle" class="is-displayed-mobile">menu</button>
                            
      </div><!-- .site-branding -->
+	
 
-	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<nav id="site-navigation" class="main-navigation menu-collapsed" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
 	</nav><!-- #site-navigation -->
 						

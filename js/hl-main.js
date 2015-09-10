@@ -8,6 +8,15 @@ jQuery(document).ready(function($) {
     // Inside of this function, $() will work as an alias for jQuery()
     // and other libraries also using $ will not be accessible under this shortcut
 	
+	
+//	navigation toggle -----------------------------------------------
+	
+$('#menu-toggle').click(function() {
+  $('#site-navigation').toggleClass("menu-collapsed");
+});
+	
+//	textillate -----------------------------------------------	
+	
 $('.tlt').textillate({ in: 
 	{ effect: 'fadeInLeft', 
 	  delay: 50,
@@ -15,6 +24,7 @@ $('.tlt').textillate({ in:
 	}
 });
 
+//	scroll effects -----------------------------------------------	
 
 
 var arrowPrimary = $('.arrow-down-button');
