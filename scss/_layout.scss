@@ -1,5 +1,5 @@
 .main-content-area {
-	background-color: #fff;
+	background-color: rgb(245,245,245);
 	position: relative;
 	z-index: 5;
 }
@@ -33,6 +33,7 @@
 	.bgimage {
 		height: inherit;
 		position:fixed;
+		    z-index:-1;
 		-webkit-transform: translateZ(0);
 		left:0;
 		top:0px;
@@ -52,6 +53,8 @@
     height: 100%;
     width: 100%;
     margin: 0;
+	position: relative;
+	z-index: -1;
 }
 
 .image_slider {
@@ -217,7 +220,6 @@
 	border-top: 1px solid $primary-color;
 	background-color: darken($primary-color,2);
 	position: relative;
-	bottom: 0;
 	z-index: 5;
 	.site-info {
 		font-size: $small;
@@ -257,6 +259,10 @@
 		max-width: 200px;
 		border-color: desaturate(lighten($primary-color, 20),60);
 		background-color: desaturate(lighten($primary-color, 40),80);
+	}
+	@include mq(small) {
+		max-height:520px;
+		bottom: -400;
 	}
 }
 
