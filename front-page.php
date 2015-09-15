@@ -22,26 +22,8 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-			
-			<?php	
-			// Display latest posts
+	
 
-			$latest_blog_posts = new WP_Query( array( 'posts_per_page' => 3 ) );
-
-			if ( $latest_blog_posts->have_posts() ) : ?>
-			
-			<div id="latest-posts-wrapper">
-				<h2><?php _e('Najnowsze wydarzenia:','hl')?></h2><hr>
-				<nav id="latest-posts">
-					<ul>
-						<?php while ( $latest_blog_posts->have_posts() ) : $latest_blog_posts->the_post(); ?>
-						<li><a href= "<?php the_permalink() ?>"> <?php the_title(); ?></a></li>
-						<?php endwhile; ?>
-					</ul>
-				</nav>
-			</div>
-			
-			<?php endif; ?>			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1158,33 +1158,49 @@ object {
   text-align: center; }
 
 .footer-area {
-  height: 300px;
   width: 100%;
+  border-top: 1px solid lightgrey;
   background-color: #008c46;
   position: relative;
   z-index: 5; }
+  .footer-area .site-info {
+    font-size: 0.97524em;
+    color: #fff; }
+    .footer-area .site-info aside {
+      width: 98%;
+      margin: 20px auto; }
+    .footer-area .site-info h4 {
+      font-size: 1em;
+      color: #fff; }
+    .footer-area .site-info .wu-forecast-body {
+      color: #fff; }
+      .footer-area .site-info .wu-forecast-body .wu-day-title {
+        color: #fff; }
+      .footer-area .site-info .wu-forecast-body .wu-cond-high {
+        color: #fdd; }
+      .footer-area .site-info .wu-forecast-body .wu-cond-low {
+        color: #ddf; }
+    .footer-area .site-info ul {
+      padding: 0;
+      margin: 0;
+      color: white;
+      list-style: circle;
+      font-size: 0.9em; }
+      .footer-area .site-info ul a {
+        color: white;
+        text-decoration: none; }
 
 #hl-footer-sidebar1,
 #hl-footer-sidebar2,
 #hl-footer-sidebar3 {
   display: block;
   float: left;
-  width: 33.3%;
-  height: 300px; }
-
-.site-info {
-  color: white; }
-
-.site-info ul {
-  padding: 0;
-  margin: 0;
-  color: white;
-  list-style: circle;
-  font-size: 0.9em; }
-
-.site-info ul a {
-  color: white;
-  text-decoration: none; }
+  width: 33%;
+  padding-right: 15px; }
+  #hl-footer-sidebar1:last-of-type,
+  #hl-footer-sidebar2:last-of-type,
+  #hl-footer-sidebar3:last-of-type {
+    padding-right: 0; }
 
 .arrow_wrapper_secondary {
   position: absolute;

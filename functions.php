@@ -116,31 +116,31 @@ function hl_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name' => 'Stopka 1',
+		'name' => 'Stopka informacje',
 		'id' => 'hl-footer-sidebar-1',
 		'description' => 'Appears in the footer area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="footer-title">',
+		'after_title' => '</h4>',
 	) );
 	register_sidebar( array(
-		'name' => 'Stopka 2',
+		'name' => 'Stopka newsletter',
 		'id' => 'hl-footer-sidebar-2',
 		'description' => 'Appears in the footer area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="footer-title">',
+		'after_title' => '</h4>',
 	) );
 	register_sidebar( array(
-		'name' => 'Stopka 3',
+		'name' => 'Stopka pogoda',
 		'id' => 'hl-footer-sidebar-3',
 		'description' => 'Appears in the footer area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="footer-title">',
+		'after_title' => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'hl_widgets_init' );
@@ -176,10 +176,10 @@ function hl_scripts() {
 	
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	if ( is_page('Mapa') || is_page('Kontakt' )) {
-	wp_enqueue_script('google-maps' , 'http://maps.google.com/maps/api/js?sensor=true' , false , '3');
-	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
-	}
+//	if ( is_page('Mapa') || is_page('Kontakt' )) {
+//	wp_enqueue_script('google-maps' , 'http://maps.google.com/maps/api/js?sensor=true' , false , '3');
+//	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
+//	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

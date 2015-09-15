@@ -213,11 +213,46 @@
 
 
 .footer-area {
-	height: 300px;
 	width: 100%;
+	border-top: 1px solid lightgrey;
 	background-color: $primary-color;
-		position: relative;
+	position: relative;
 	z-index: 5;
+	.site-info {
+		font-size: $small;
+		color: #fff;
+		aside {
+			width: 98%;
+			margin: 20px auto;
+		}
+		h4 {
+			font-size: $base;
+			color: #fff;
+		}
+		.wu-forecast-body {
+			color: #fff;
+			.wu-day-title {
+				color: #fff;
+			}
+			.wu-cond-high {
+				color: #fdd;
+			}
+			.wu-cond-low {
+				color: #ddf;
+			}
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			color: white;
+			list-style: circle;
+			font-size: 0.9em;
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 #hl-footer-sidebar1,
@@ -225,26 +260,11 @@
 #hl-footer-sidebar3 {
 	display: block;
 	float: left;
-	width: 33.3%;
-	height: 300px;
-}
-
-.site-info {
-
-	color: white;
-}
-
-.site-info ul {
-	padding: 0;
-	margin: 0;
-	color: white;
-	list-style: circle;
-	font-size: 0.9em;
-}
-
-.site-info ul a {
-	color: white;
-	text-decoration: none;
+	width: 33%;
+	padding-right: 15px;
+	&:last-of-type {
+		padding-right: 0;
+	}
 }
 
 .arrow_wrapper_secondary {
