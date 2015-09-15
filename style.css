@@ -288,11 +288,26 @@ p {
 .widget-area li a {
   color: #5a5a5a; }
 
+@media (min-width: 1px) and (max-width: 760px) {
+  .widget-area aside {
+    padding: 0 0 1.2em 0; } }
+@media (min-width: 1px) and (max-width: 760px) {
+  .widget-area aside input {
+    width: 100%;
+    height: 3em; } }
 .widget-area h2 {
   font-size: 1em;
   margin-bottom: 0.2em; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .widget-area h2 {
+      font-size: 1.5992em;
+      margin-bottom: 0.5em; } }
 .widget-area p, .widget-area li, .widget-area a {
-  font-size: 0.90023em; }
+  font-size: 0.97524em; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .widget-area p, .widget-area li, .widget-area a {
+      font-size: 1em;
+      margin-bottom: 0.5em; } }
 
 dfn,
 cite,
@@ -443,6 +458,15 @@ ol {
 
 ul {
   list-style: outside url("ikony/bullet.svg") disc; }
+  .trails ul {
+    list-style: none; }
+    .trails ul li {
+      margin-bottom: 1.4em; }
+      @media (min-width: 1px) and (max-width: 760px) {
+        .trails ul li {
+          margin-bottom: 1.4em;
+          padding-bottom: 1.4em;
+          border-bottom: 1px solid lightgrey; } }
 
 ol {
   list-style: decimal; }
@@ -584,7 +608,7 @@ a {
     display: block;
     padding: 0 25px;
     text-decoration: none;
-    font-size: 0.90023em;
+    font-size: 0.97524em;
     color: white;
     line-height: 58px; }
     @media (min-width: 1px) and (max-width: 760px) {
@@ -894,7 +918,7 @@ object {
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
-  font-size: 0.90023em; }
+  font-size: 0.97524em; }
 
 .wp-caption-text {
   text-align: center; }
@@ -1072,6 +1096,11 @@ object {
   float: left;
   width: 75%;
   margin-top: 40px; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .content-blog-area {
+      margin-top: 120px;
+      width: 100%;
+      float: none; } }
 
 .site-content .widget-area {
   float: right;
@@ -1079,6 +1108,10 @@ object {
   width: 25%;
   margin-top: 40px;
   padding: 0 40px 0; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .site-content .widget-area {
+      width: 100%;
+      float: none; } }
 
 #map {
   height: 400px;
@@ -1174,46 +1207,13 @@ object {
   border-radius: 5px;
   padding: 15px;
   text-align: center;
-  font-size: 0.90023em; }
+  font-size: 0.97524em; }
 
 .su-row .hl-featured.su-column {
   margin-bottom: 30px; }
 
-[class*='col-'] {
-  padding-right: 20px;
-  float: left;
-  position: relative; }
-
-[class*='col-']:last-of-type {
-  padding-right: 0; }
-
-.col-1-1 {
-  width: 100%; }
-
-.col-3-4,
-.col-6-8 {
-  width: 75%; }
-
-.col-5-8 {
-  width: 62.5%; }
-
-.col-1-2,
-.col-2-4,
-.col-4-8 {
-  width: 50%; }
-
-.col-1-4,
-.col-2-8 {
-  width: 25%; }
-
-.col-3-8 {
-  width: 37.5%; }
-
-.col-1-8 {
-  width: 12.5%; }
-
 .site-content .su-row {
-  margin-bottom: 70px; }
+  margin-bottom: 45px; }
 
 .meta {
   font-size: 0.8em;

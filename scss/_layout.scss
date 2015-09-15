@@ -143,6 +143,11 @@
 	float: left;
 	width: 75%;
 	margin-top: 40px;
+		@include mq(small) {
+		margin-top: 120px;
+		width:100%;
+		float: none;
+	}
 }
 
 .site-content .widget-area {
@@ -151,6 +156,10 @@
 	width: 25%;
 	margin-top: 40px;
 	padding: 0 40px 0;
+	@include mq(small) {
+		width:100%;
+		float: none;
+	}
 }
 #map {
 	height: 400px;
@@ -270,45 +279,7 @@
 	margin-bottom: 30px;
 }
 
-[class*='col-'] {
-    padding-right: 20px;
-    float: left;
-    position: relative;
-}
 
-[class*='col-']:last-of-type {
-    padding-right: 0;
-}
-
-.col-1-1 {
-    width: 100%;
-}
-
-.col-3-4,
-.col-6-8 {
-    width: 75%;
-}
-
-.col-5-8 {
-    width: 62.5%;
-}
-
-.col-1-2,
-.col-2-4,
-.col-4-8 {
-    width: 50%;
-}
-
-.col-1-4,
-.col-2-8 {
-    width: 25%;
-}
-
-.col-3-8 {
-    width: 37.5%;
-}
-
-
-.col-1-8 {
-    width: 12.5%;
+.site-content .su-row {
+	margin-bottom: 45px;
 }

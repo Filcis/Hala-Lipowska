@@ -2,72 +2,19 @@
 
 //Full width
 
-function one_one( $atts, $content = null ) {
- 
-    return '<div class="col-1-1">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('pelna_szerokosc', 'one_one');
+function hl_columns( $atts = null, $content = null ) {
+		$atts = shortcode_atts( array(
+				'size'   => '1',
+				'center' => 'no',
+				'last'   => null,
+				'class'  => ''
+			), $atts, 'hl_columns' );
+		if ( $atts['last'] !== null && $atts['last'] == '1' ) $atts['class'] .= 'column-last';
+		if ( $atts['center'] === 'yes' ) $atts['class'] .= ' centered';
+		return '<div class="grid__col--' . $atts['size'] . '">' . do_shortcode( $content ) . '</div>';
+	}
 
-//Half width
-
-function one_two( $atts, $content = null ) {
- 
-    return '<div class="col-1-2">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('jedna_druga', 'one_two');
-
-//Half width
-
-function one_fourth( $atts, $content = null ) {
- 
-    return '<div class="col-1-4">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('jedna_czwarta', 'one_fourth');
-
-
-function one_eight( $atts, $content = null ) {
- 
-    return '<div class="col-1-8">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('jedna_osma', 'one_eight');
-
-
-
-function three_fourth( $atts, $content = null ) {
- 
-    return '<div class="col-3-4">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('trzy_czwarte', 'three_fourth');
-
-
-
-
-function three_eight( $atts, $content = null ) {
- 
-    return '<div class="col-3-8">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('trzy_osme', 'three_eight');
-
-
-function five_eight( $atts, $content = null ) {
- 
-    return '<div class="col-3-4">' . do_shortcode( $content ) . '</div>';
- 
-}
- 
-add_shortcode('piec_osmych', 'five_eight');
+add_shortcode('kolumny', 'hl_columns');
 
 ?>
 

@@ -87,6 +87,17 @@ ol {
 
 ul {
 	list-style:  outside url("ikony/bullet.svg") disc;
+	.trails & {
+	list-style: none;
+	li {
+		margin-bottom: 1.4em;
+		@include mq(small) {
+			margin-bottom: 1.4em;
+			padding-bottom: 1.4em;
+			border-bottom: 1px solid lightgrey;
+		}
+	}
+	}
 }
 
 ol {
