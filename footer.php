@@ -33,18 +33,10 @@
 			}
 			?>
 			</div>
-			<div id="hl-footer-sidebar3">
-			<?php
-			if(is_active_sidebar('hl-footer-sidebar-3')){
-			dynamic_sidebar('hl-footer-sidebar-3');
-			}
-			?>
-			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
        </div>
 </div>
-
 <?php wp_footer(); ?>
 
 </body>

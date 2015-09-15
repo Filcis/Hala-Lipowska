@@ -1,6 +1,5 @@
-
 .main-content-area {
-	background-color: rgb(245,245,245);
+	background-color: #fff;
 	position: relative;
 	z-index: 5;
 }
@@ -211,16 +210,21 @@
 }
 
 
+//FOOTER
 
 .footer-area {
 	width: 100%;
-	border-top: 1px solid lightgrey;
-	background-color: $primary-color;
+	border-top: 1px solid $primary-color;
+	background-color: darken($primary-color,2);
 	position: relative;
+	bottom: 0;
 	z-index: 5;
 	.site-info {
 		font-size: $small;
 		color: #fff;
+		.wu-day-title {
+				color: #fff;
+			}
 		aside {
 			width: 98%;
 			margin: 20px auto;
@@ -228,18 +232,6 @@
 		h4 {
 			font-size: $base;
 			color: #fff;
-		}
-		.wu-forecast-body {
-			color: #fff;
-			.wu-day-title {
-				color: #fff;
-			}
-			.wu-cond-high {
-				color: #fdd;
-			}
-			.wu-cond-low {
-				color: #ddf;
-			}
 		}
 		ul {
 			padding: 0;
@@ -253,20 +245,46 @@
 			}
 		}
 	}
-}
-
-#hl-footer-sidebar1,
-#hl-footer-sidebar2,
-#hl-footer-sidebar3 {
-	display: block;
-	float: left;
-	width: 33%;
-	padding-right: 15px;
-	&:last-of-type {
-		padding-right: 0;
+	input[type="submit"] {
+		background-color: $primary-color;
+		color: #fff;
+		padding: 5px;
+		border-radius: 10px;
+		border: 1px solid desaturate(lighten($primary-color, 20),60);
+	}
+	input[type="text"] {
+		width: 80%;
+		max-width: 200px;
+		border-color: desaturate(lighten($primary-color, 20),60);
+		background-color: desaturate(lighten($primary-color, 40),80);
 	}
 }
 
+%footer-sidebar {
+	display: block;
+	float: left;
+}
+
+#hl-footer-sidebar1 {
+	@extend %footer-sidebar;
+	width: 33%;
+	padding-right: 15px;
+	@include mq(small) {
+		width: 100%;
+		padding: 15px;
+		border-bottom: 1px solid white;
+	}
+}
+
+#hl-footer-sidebar2 {
+	@extend %footer-sidebar;
+	width: 66%;
+	padding-right: 15px;
+	@include mq(small) {
+		width: 100%;
+		padding: 15px;
+	}
+}
 .arrow_wrapper_secondary {
     position: absolute;
     bottom: 5%;

@@ -976,7 +976,7 @@ object {
 # Layout
 --------------------------------------------------------------*/
 .main-content-area {
-  background-color: whitesmoke;
+  background-color: #fff;
   position: relative;
   z-index: 5; }
 
@@ -1159,27 +1159,22 @@ object {
 
 .footer-area {
   width: 100%;
-  border-top: 1px solid lightgrey;
-  background-color: #008c46;
+  border-top: 1px solid #008c46;
+  background-color: #008241;
   position: relative;
+  bottom: 0;
   z-index: 5; }
   .footer-area .site-info {
     font-size: 0.97524em;
     color: #fff; }
+    .footer-area .site-info .wu-day-title {
+      color: #fff; }
     .footer-area .site-info aside {
       width: 98%;
       margin: 20px auto; }
     .footer-area .site-info h4 {
       font-size: 1em;
       color: #fff; }
-    .footer-area .site-info .wu-forecast-body {
-      color: #fff; }
-      .footer-area .site-info .wu-forecast-body .wu-day-title {
-        color: #fff; }
-      .footer-area .site-info .wu-forecast-body .wu-cond-high {
-        color: #fdd; }
-      .footer-area .site-info .wu-forecast-body .wu-cond-low {
-        color: #ddf; }
     .footer-area .site-info ul {
       padding: 0;
       margin: 0;
@@ -1189,18 +1184,38 @@ object {
       .footer-area .site-info ul a {
         color: white;
         text-decoration: none; }
+  .footer-area input[type="submit"] {
+    background-color: #008c46;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #49a979; }
+  .footer-area input[type="text"] {
+    width: 80%;
+    max-width: 200px;
+    border-color: #49a979;
+    background-color: #9bbdac; }
 
-#hl-footer-sidebar1,
-#hl-footer-sidebar2,
-#hl-footer-sidebar3 {
+#hl-footer-sidebar1, #hl-footer-sidebar2 {
   display: block;
-  float: left;
+  float: left; }
+
+#hl-footer-sidebar1 {
   width: 33%;
   padding-right: 15px; }
-  #hl-footer-sidebar1:last-of-type,
-  #hl-footer-sidebar2:last-of-type,
-  #hl-footer-sidebar3:last-of-type {
-    padding-right: 0; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    #hl-footer-sidebar1 {
+      width: 100%;
+      padding: 15px;
+      border-bottom: 1px solid white; } }
+
+#hl-footer-sidebar2 {
+  width: 66%;
+  padding-right: 15px; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    #hl-footer-sidebar2 {
+      width: 100%;
+      padding: 15px; } }
 
 .arrow_wrapper_secondary {
   position: absolute;
