@@ -13,6 +13,7 @@
 		</div>
     </div>
 <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'fallback_cb' => '__return_false' ) ); ?>
+<div class="push"></div>
 </div><!-- #content -->
         
 <div class="footer-area full-wrapper">

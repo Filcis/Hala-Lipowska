@@ -160,3 +160,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	height: 100%;
 	z-index: 99;
 }
+
+//Sticky footer overwrites for sites with potentially low content
+
+body.blog {
+	min-height: 100%;
+	position: relative;
+	.push {
+		height: 12.5em;
+	}
+}
+
+body.blog #content {
+	min-height: 780px;
+	min-height: calc(100vh - 12.5em);
+}
+
+body.blog .main-content-area {
+	position: static;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -12.5em;
+}

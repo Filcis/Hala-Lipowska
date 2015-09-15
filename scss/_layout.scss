@@ -217,10 +217,11 @@
 
 .footer-area {
 	width: 100%;
+	height: 12.5em;
 	border-top: 1px solid $primary-color;
 	background-color: darken($primary-color,2);
-	position: relative;
-	z-index: 5;
+//	position: relative;
+//	z-index: 5;
 	.site-info {
 		font-size: $small;
 		color: #fff;

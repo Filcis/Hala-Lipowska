@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<?php if ( is_front_page() && !is_home() || is_page() && !is_page_template( 'page-noslider.php') ) : ?>	
-	<div id="loader" class="se-pre-con"></div>
+	<div id="loader" class="se-pre-con"></div> <!--page loader-->
 	<?php endif; ?>
     <div class="header-area full-wrapper">        
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hl' ); ?></a>
