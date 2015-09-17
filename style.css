@@ -737,30 +737,38 @@ a {
 
 /*UL SHORTCODES OVERWRITES FOR TABBED SUBMENU*/
 .hl-tabs.su-tabs {
-  background-color: #fff;
-  border: none; }
+  background-color: #d7f0db;
+  margin: 0;
+  padding: 0; }
   .hl-tabs.su-tabs .su-tabs-pane {
     font-size: 1em;
-    padding: 0; }
+    padding-top: 3em; }
   .hl-tabs.su-tabs .su-tabs-nav {
     text-align: center;
     line-height: 2rem;
-    margin-bottom: 50px; }
+    margin-bottom: 0px; }
     .hl-tabs.su-tabs .su-tabs-nav .su-tabs-current {
-      text-decoration: underline; }
+      background-color: #c8dcc8; }
   .hl-tabs.su-tabs .su-tabs-nav span {
-    border-right: 1px solid lightgray;
-    font-size: 1.333em;
-    line-height: 2rem;
-    padding: 2px 10px;
-    color: #008c46; }
-    .hl-tabs.su-tabs .su-tabs-nav span:last-child {
-      border-right: none; }
-    @media (min-width: 1px) and (max-width: 760px) {
+    margin: 2px; }
+  @media (min-width: 761px) {
+    .hl-tabs.su-tabs {
+      background-color: #fff;
+      border: none; }
+      .hl-tabs.su-tabs .su-tabs-nav {
+        text-align: center;
+        line-height: 2rem;
+        margin-bottom: 50px; }
+        .hl-tabs.su-tabs .su-tabs-nav .su-tabs-current {
+          text-decoration: underline; }
       .hl-tabs.su-tabs .su-tabs-nav span {
-        border: none;
-        font-size: 1em;
-        line-height: 2.5rem; } }
+        border-right: 1px solid lightgray;
+        font-size: 1.333em;
+        line-height: 2rem;
+        padding: 2px 10px;
+        color: #008c46; }
+        .hl-tabs.su-tabs .su-tabs-nav span:last-child {
+          border-right: none; } }
 
 .featured-activities img {
   cursor: pointer;
@@ -1005,6 +1013,9 @@ object {
 
 .site-main {
   padding: 0 40px; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .site-main {
+      padding: 0 15px; } }
 
 .page-content-wrapper main {
   background-color: white; }
@@ -1191,6 +1202,7 @@ object {
     .footer-area .site-info .wu-day-title {
       color: #fff; }
     .footer-area .site-info aside {
+      font-size: 0.75019em;
       width: 98%;
       margin: 20px auto; }
     .footer-area .site-info h4 {
@@ -1200,8 +1212,7 @@ object {
       padding: 0;
       margin: 0;
       color: white;
-      list-style: circle;
-      font-size: 0.9em; }
+      list-style: circle; }
       .footer-area .site-info ul a {
         color: white;
         text-decoration: none; }
