@@ -18,10 +18,19 @@
     margin: 0 10px 10px auto;
     padding: 2px;
     vertical-align: middle;
+	@include mq(small) {
+		display: block;
+		margin: 0 auto 8px;
+		float: none;
+	}
 }
 .paragraph-with-icons p {
 	padding-left: 50px;
 	margin-top: 0;
+	@include mq(small) {
+		margin-top: 10px;
+		padding-left: 0;
+	}
 }
 .hl-featured hr {
 	-moz-border-bottom-colors: none;
@@ -32,7 +41,7 @@
     border-image: none;
     border-style: none none dashed;
     border-width: 0 0 2px;
-    color: #f9f9f9;
+    color: lightgrey;
     margin: 0 auto;
 	width: 70%;	
 	background-color: #fff;

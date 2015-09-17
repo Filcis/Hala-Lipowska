@@ -248,9 +248,16 @@ input,
 select,
 textarea {
   color: #404040;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.5;
   font-family: "Open Sans", "Tahoma", "Arial", sans-serif; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-size: 14px; } }
 
 h1,
 h2,
@@ -261,7 +268,7 @@ h6 {
   clear: both; }
 
 h2 {
-  font-size: 1.5992em; }
+  font-size: 1.333em; }
 
 h3 {
   font-size: 1.333em; }
@@ -409,10 +416,19 @@ big {
   margin: 0 10px 10px auto;
   padding: 2px;
   vertical-align: middle; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .icon {
+      display: block;
+      margin: 0 auto 8px;
+      float: none; } }
 
 .paragraph-with-icons p {
   padding-left: 50px;
   margin-top: 0; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .paragraph-with-icons p {
+      margin-top: 10px;
+      padding-left: 0; } }
 
 .hl-featured hr {
   -moz-border-bottom-colors: none;
@@ -423,7 +439,7 @@ big {
   border-image: none;
   border-style: none none dashed;
   border-width: 0 0 2px;
-  color: #f9f9f9;
+  color: lightgrey;
   margin: 0 auto;
   width: 70%;
   background-color: #fff; }
@@ -568,6 +584,9 @@ a {
   width: 100%;
   -webkit-transition: background-color 1s;
   transition: background-color 1s; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    .main-navigation-wrapper {
+      position: absolute; } }
 
 /*logo container*/
 .site-branding {
@@ -645,7 +664,7 @@ a {
   .facebook-icon:hover {
     background: url(ikony/Facebook-active.svg) no-repeat center; }
   .facebook-icon a:hover {
-    background-color: transparent; }
+    background-color: transparent !important; }
 
 #menu-toggle {
   position: absolute;
@@ -760,7 +779,8 @@ a {
         line-height: 2rem;
         margin-bottom: 50px; }
         .hl-tabs.su-tabs .su-tabs-nav .su-tabs-current {
-          text-decoration: underline; }
+          text-decoration: underline;
+          background-color: #fff; }
       .hl-tabs.su-tabs .su-tabs-nav span {
         border-right: 1px solid lightgray;
         font-size: 1.333em;
@@ -1015,7 +1035,7 @@ object {
   padding: 0 40px; }
   @media (min-width: 1px) and (max-width: 760px) {
     .site-main {
-      padding: 0 15px; } }
+      padding: 0 28px; } }
 
 .page-content-wrapper main {
   background-color: white; }

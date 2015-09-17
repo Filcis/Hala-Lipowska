@@ -17,7 +17,7 @@ $openSans: "Open Sans", "Tahoma", "Arial", sans-serif;
 
 $modular-scale-ratio: $perfect-fourth;
 
-$tiny    : modular-scale(-1);
+$tiny     : modular-scale(-1);
 $small    : modular-scale(-1, 1.3em);
 $base     : modular-scale(0);
 $medium   : modular-scale(1);

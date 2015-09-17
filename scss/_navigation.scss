@@ -29,6 +29,9 @@ a {
 	width: 100%;
 	-webkit-transition: background-color 1s;
 	transition: background-color 1s;
+	@include mq(small) {
+		position: absolute;
+	}
 }
 
 /*logo container*/
@@ -51,11 +54,6 @@ a {
 		margin: auto;
 		display: block;
 		z-index: 999;
-		@include mq(small) {
-//		position: absolute;
-//		left:  50%;
-//		transform: translateX(-50%)
-	}
 	}
 }
 
@@ -129,7 +127,7 @@ a {
 		background: url(ikony/Facebook-active.svg) no-repeat center;
 	}
 	& a:hover {
-		background-color: transparent;
+		background-color: transparent !important;
 	}
 }
 
@@ -277,6 +275,7 @@ transition: background-color 1s;
 			margin-bottom: 50px;
 			.su-tabs-current {
 				text-decoration: underline;
+				background-color: #fff;
 			}
 		}
 		.su-tabs-nav span {
