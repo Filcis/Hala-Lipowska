@@ -217,14 +217,15 @@
 
 .footer-area {
 	width: 100%;
-	height: 12.5em;
 	border-top: 1px solid $primary-color;
 	background-color: darken($primary-color,2);
-//	position: relative;
-//	z-index: 5;
+	@include mq(large) { height: 12.5em; }
 	.site-info {
 		font-size: $small;
 		color: #fff;
+		@include mq(medium){
+			padding: 0 20px;
+		}
 		.wu-day-title {
 				color: #fff;
 			}

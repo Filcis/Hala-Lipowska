@@ -117,6 +117,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .meta {
 	font-size: 0.8em;
 	color: gray;
+	margin: 0.5em 1em 1em 0;
+	float: left;
+}
+.post-categories {
+	list-style: none;
+	float: left;
+	li {
+		font-size: 0.8em;
+		margin: 0.5em 0.5em 1em 0;
+		float: left;
+		a { 
+			color: white;
+			background-color: rgb(150,210,170);
+			padding: 2px 4px;
+			-webkit-border-radius: 2px;  /* Safari */
+			-moz-border-radius: 2px;    /* Firefox\Gecko Engine */
+			-o-border-radius: 2px;     /* Opera */
+			border-radius: 2px;
+		}
+	}
 }
 
 .post-thumb-home {
@@ -163,23 +183,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 //Sticky footer overwrites for sites with potentially low content
 
-body.blog {
-	min-height: 100%;
-	position: relative;
-	.push {
-		height: 12.5em;
+body.blog, body.post, body.archive, body.search {
+	@include mq(large) {
+		min-height: 100%;
+		position: relative; 
+		.push {
+			height: 12.5em;
+		}
+		#content {
+			padding-top: 6em;
+			min-height: 780px;
+			min-height: calc(100vh - 12.5em);
+		}
+		.main-content-area {
+			position: static;
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+			margin: 0 auto -12.5em;
+		}
 	}
 }
 
-body.blog #content {
-	min-height: 780px;
-	min-height: calc(100vh - 12.5em);
-}
-
-body.blog .main-content-area {
-	position: static;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -12.5em;
-}

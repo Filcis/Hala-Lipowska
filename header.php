@@ -36,7 +36,7 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			
 			<?php if(!is_mobile()) : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttk.svg">
 			<?php else : ?>
 			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile.svg">
 			<?php endif; ?>
