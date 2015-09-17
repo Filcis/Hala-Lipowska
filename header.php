@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<?php if ( is_front_page() && !is_home() || is_page() && !is_page_template( 'page-noslider.php') ) : ?>	
-	<div id="loader" class="se-pre-con"></div>
+	<div id="loader" class="se-pre-con"></div> <!--page loader-->
 	<?php endif; ?>
     <div class="header-area full-wrapper">        
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hl' ); ?></a>
@@ -36,7 +36,7 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			
 			<?php if(!is_mobile()) : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-narrow.svg">
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttk.svg">
 			<?php else : ?>
 			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile.svg">
 			<?php endif; ?>
@@ -49,14 +49,6 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb' => '__return_false' ) ); ?>
 	</nav><!-- #site-navigation -->
 						
-
-<!--
-	<div id='widget-wrapper'>
-		<button type="button" class="weather-button">Pogoda</button>
-		<div id="hl-weather"></div>
-	</div> #weather widget and facebook icon 
--->
-
 </div>			
 </header><!-- #masthead -->
 </div>
@@ -68,7 +60,6 @@
 <!-- get futured image and headlines -->
 <?php get_template_part( 'header-page'); ?>
 <?php endif; ?>
-
-<div class="main-content-area full">	
-<div class="page-content-wrapper main">
-<div id="content" class="site-content">
+	<div class="main-content-area full">	
+		<div class="page-content-wrapper main">
+			<div id="content" class="site-content">

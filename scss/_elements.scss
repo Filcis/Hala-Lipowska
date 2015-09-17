@@ -57,7 +57,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: rgb(245,245,245);
 }
 
 blockquote:before,
@@ -125,5 +125,8 @@ img {
 
 table {
 	margin: 0 0 1.5em;
+	width: 100%;
+}
+.meta-wrapper {
 	width: 100%;
 }

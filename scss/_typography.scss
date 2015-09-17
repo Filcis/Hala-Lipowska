@@ -139,6 +139,20 @@ big {
 	border: solid 1px rgba(255,255,255, 0.5);
 	border-width: 0 0 1px 0;
 }
+.blog-title {
+	font-size: $huge;
+}
+.blog-entry-title {
+	font-size: $big;
+	padding-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-top: 1px solid lightgray;
+	&:first-child {
+		border: none;
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
 
 .read-more {
 	font-size: $big;

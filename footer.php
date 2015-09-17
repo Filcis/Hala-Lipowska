@@ -13,6 +13,7 @@
 		</div>
     </div>
 <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu', 'fallback_cb' => '__return_false' ) ); ?>
+<div class="push"></div>
 </div><!-- #content -->
         
 <div class="footer-area full-wrapper">
@@ -33,19 +34,11 @@
 			}
 			?>
 			</div>
-			<div id="hl-footer-sidebar3">
-			<?php
-			if(is_active_sidebar('hl-footer-sidebar-3')){
-			dynamic_sidebar('hl-footer-sidebar-3');
-			}
-			?>
-			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
        </div>
 </div>
-
 <?php wp_footer(); ?>
-
+</div>
 </body>
 </html>
