@@ -14,6 +14,10 @@
 
 get_header(); ?>
 
+	<nav id="site-navigation" class="sub-navigation" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'sub-menu', 'fallback_cb' => '__return_false' ) ); ?>
+	</nav><!-- #site-navigation -->
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

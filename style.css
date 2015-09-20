@@ -393,6 +393,12 @@ big {
   margin: auto;
   z-index: 999; }
 
+.comments-title {
+  padding-top: 2em;
+  border-top: 1px dashed lightgray;
+  font-size: 1.1997em;
+  color: #454545; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -502,7 +508,7 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 2.5em; }
 
 dt {
   font-weight: bold; }
@@ -1302,11 +1308,21 @@ object {
 .site-content .su-row {
   margin-bottom: 45px; }
 
+.comment-body {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid lightgrey; }
+
 .meta {
   font-size: 0.8em;
   color: gray;
   margin: 0.5em 1em 1em 0;
   float: left; }
+
+.comment-metadata {
+  font-size: 0.8em;
+  color: gray;
+  margin: 0.5em 1em 1em 0; }
 
 .post-categories {
   list-style: none;
