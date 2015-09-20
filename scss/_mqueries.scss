@@ -22,6 +22,21 @@
     }
   }
    @else {
-   	@error "Whoops! No value could be retrieved for `#{$break}`. "
-  }
+   	@media (max-width: $break) {
+      @content;
+		}
+	}
+}
+
+.hide-on-mobile {
+	@include mq(990px) {
+		display: none;
+	}
+}
+
+.show-on-mobile {
+	display: none;
+	@include mq(990px) {
+		display: block;
+	}
 }

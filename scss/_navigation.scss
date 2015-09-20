@@ -24,7 +24,7 @@ a {
 	background-color: transparentize($primary-color, 0.3);
 	border-bottom: 1px solid $primary-color;
 	z-index: 99999;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	-webkit-transition: background-color 1s;

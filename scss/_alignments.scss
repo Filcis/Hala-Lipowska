@@ -1,13 +1,17 @@
+[class*="su-column"] + [class*="su-column"]:last-child.alignleft,
+.su-column.alignleft,
 .alignleft {
-	display: inline;
 	float: left;
-	margin-right: 1.5em;
+	padding-right: 30px;
+	margin-left: 0;
+	@include mq(small) {
+		padding-right: 0;
+	}
 }
 
+.su-column.alignright,
 .alignright {
-	display: inline;
 	float: right;
-	margin-left: 1.5em;
 }
 
 .aligncenter {
@@ -15,4 +19,13 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.figure img {
+	@include mq(990px) {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

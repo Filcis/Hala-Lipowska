@@ -54,6 +54,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+@media (max-width: 990px) {
+  .hide-on-mobile {
+    display: none; } }
+
+.show-on-mobile {
+  display: none; }
+  @media (max-width: 990px) {
+    .show-on-mobile {
+      display: block; } }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -251,7 +261,7 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Open Sans", "Tahoma", "Arial", sans-serif; }
-  @media (min-width: 1px) and (max-width: 760px) {
+  @media (max-width: 560px) {
     body,
     button,
     input,
@@ -585,7 +595,7 @@ a {
   background-color: rgba(0, 140, 70, 0.7);
   border-bottom: 1px solid #008c46;
   z-index: 99999;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   -webkit-transition: background-color 1s;
@@ -843,21 +853,34 @@ a {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+[class*="su-column"] + [class*="su-column"]:last-child.alignleft,
+.su-column.alignleft,
 .alignleft {
-  display: inline;
   float: left;
-  margin-right: 1.5em; }
+  padding-right: 30px;
+  margin-left: 0; }
+  @media (min-width: 1px) and (max-width: 760px) {
+    [class*="su-column"] + [class*="su-column"]:last-child.alignleft,
+    .su-column.alignleft,
+    .alignleft {
+      padding-right: 0; } }
 
+.su-column.alignright,
 .alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
+  float: right; }
 
 .aligncenter {
   clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+@media (max-width: 990px) {
+  .figure img {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -1072,7 +1095,7 @@ object {
   width: 100%;
   margin: 0;
   position: relative;
-  z-index: -1; }
+  z-index: 1; }
 
 .image_slider {
   height: inherit;
@@ -1213,6 +1236,8 @@ object {
   text-align: center; }
 
 .footer-area {
+  position: relative;
+  z-index: 2;
   width: 100%;
   border-top: 1px solid #008c46;
   background-color: #008241; }

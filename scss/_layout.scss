@@ -57,7 +57,7 @@
     width: 100%;
     margin: 0;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 }
 
 .image_slider {
@@ -219,6 +219,8 @@
 //FOOTER
 
 .footer-area {
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	border-top: 1px solid $primary-color;
 	background-color: darken($primary-color,2);
