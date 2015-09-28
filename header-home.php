@@ -1,5 +1,4 @@
 <?php if (!is_mobile()) : ?>
-<!--<div class="image-wrapper-color parallax-back"></div>-->
 <div class="slider-wrapper">
 <?php echo l_slider_function(); ?>
 	
@@ -12,7 +11,7 @@
 
 <?php else : 
 global $post;
-$hl_src_mobile = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(400,600), false, '' ); ?>
+$hl_src_mobile = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(796,1024), false, '' ); ?>
 <div class="image-wrapper">
 <div class="bgimage" style="background-image: url(<?php echo $hl_src_mobile[0]; ?> );"></div>
 <div class="page-title"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

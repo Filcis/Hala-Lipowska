@@ -22,7 +22,7 @@
     }
   }
    @else {
-   	@media (max-width: $break) {
+   	@media  (max-width: $break) {
       @content;
 		}
 	}

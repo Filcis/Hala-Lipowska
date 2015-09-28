@@ -117,7 +117,7 @@ function hl_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name' => 'Stopka informacje',
+		'name' => 'Stopka newsletter',
 		'id' => 'hl-footer-sidebar-1',
 		'description' => 'Appears in the footer area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -126,7 +126,7 @@ function hl_widgets_init() {
 		'after_title' => '</h4>',
 	) );
 	register_sidebar( array(
-		'name' => 'Stopka pogoda',
+		'name' => 'Stopka partnerzy',
 		'id' => 'hl-footer-sidebar-2',
 		'description' => 'Appears in the footer area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -164,14 +164,10 @@ function hl_scripts() {
        
 	wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array('jquery'), '', true );
 	
-	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array(), '', true );
+	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array('jquery'), '', true );
 	
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-//	if ( is_page('Mapa') || is_page('Kontakt' )) {
-//	wp_enqueue_script('google-maps' , 'http://maps.google.com/maps/api/js?sensor=true' , false , '3');
-//	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), '', true );
-//	}
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

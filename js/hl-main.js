@@ -58,12 +58,6 @@ arrowSecondary.click(arrowDown);
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 5) {
-        $('.main-navigation-wrapper').addClass("scrolling");
-    } else {
-        $('.main-navigation-wrapper').removeClass("scrolling");
-    }
-
 //------------------------------------------------		
     var height = $(window).height();
 

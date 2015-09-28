@@ -12,7 +12,7 @@
 ?><!DOCTYPE html>
 <html  class="no-js" <?php language_attributes(); ?>>
 <head>
-	<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
