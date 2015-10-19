@@ -41,7 +41,7 @@ function hl_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	
+	add_image_size( 'post', 980, 600, true );
 	// MENUS
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'hl' ),
@@ -173,6 +173,26 @@ function hl_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hl_scripts' );
+
+
+/*
+   * Removes the jump to top functionality when a reader
+   * clicks on a read more link from your posts excerpt feed.
+   *
+   * @since 1.0.4
+   *
+   */
+function remove_more_jump_link($link) {
+    $offset = strpos($link, '#more-');
+    if ($offset) {
+      $end = strpos($link, '"',$offset);
+    }
+    if ($end) {
+      $link = substr_replace($link, '', $offset, $end-$offset);
+    }
+    return $link;
+  }
+  add_filter('the_content_more_link', 'remove_more_jump_link');
 
 /**
  * Implement the Custom Header feature.

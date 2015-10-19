@@ -20,6 +20,7 @@ $modular-scale-ratio: $perfect-fourth;
 $tiny     : modular-scale(-1);
 $small    : modular-scale(-1, 1.3em);
 $base     : modular-scale(0);
+$smedium  : modular-scale(1, 0.9em);
 $medium   : modular-scale(1);
 $big      : modular-scale(2, 0.9em);
 $huge     : modular-scale(3);

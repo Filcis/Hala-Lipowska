@@ -38,6 +38,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php hl_entry_footer(); ?>
+		<?php hl_entry_comments(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

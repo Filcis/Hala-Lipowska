@@ -158,10 +158,16 @@
 
 .content-blog-area {
 	float: left;
-	width: 75%;
+	width: 65%;
+	margin-right: 10%;
 	margin-top: 40px;
-		@include mq(small) {
+	@include mq(medium) {
+		width: 70%;
+		margin-right: 5%;
+	}
+	@include mq(small) {
 		margin-top: 120px;
+		margin-right: 0;
 		width:100%;
 		float: none;
 	}
@@ -342,9 +348,19 @@
 	margin-bottom: 30px;
 }
 
+.featured-row {
+	margin-top: 7.5em;
+}
+
 
 .site-content .su-row {
 	margin-bottom: 45px;
+}
+
+body.blog body.archive .site-content .su-row,
+body.single body.archive .site-content .su-row,
+body.archive .site-content .su-row {
+	margin-bottom: 0;
 }
 
 .comment-body {

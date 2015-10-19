@@ -287,12 +287,23 @@ h3 {
   font-size: 1.333em; }
 
 h4 {
-  font-size: 1.333em; }
+  font-size: 1.333em;
+  margin-top: 1em; }
 
-h2, h4 {
+h2, h3, h4 {
   color: #008c46;
   font-weight: 400;
   margin-bottom: 1.2em; }
+
+body.blog h2, body.post h2, body.archive h2, body.search h2, body.single h2, body.archive h2 {
+  font-size: 1.333em;
+  margin-bottom: 1em; }
+body.blog h3, body.post h3, body.archive h3, body.search h3, body.single h3, body.archive h3 {
+  font-size: 1.1997em;
+  margin-bottom: 1em; }
+body.blog h4, body.post h4, body.archive h4, body.search h4, body.single h4, body.archive h4 {
+  font-size: 1em;
+  margin-bottom: 1em; }
 
 p {
   margin-bottom: 1.5em;
@@ -428,27 +439,6 @@ big {
   width: 1px;
   display: block; }
 
-.icon {
-  border: 1px solid #008c46;
-  border-radius: 50px;
-  float: left;
-  margin: 0 10px 10px auto;
-  padding: 2px;
-  vertical-align: middle; }
-  @media (min-width: 1px) and (max-width: 764px) {
-    .icon {
-      display: block;
-      margin: 0 auto 8px;
-      float: none; } }
-
-.paragraph-with-icons p {
-  padding-left: 50px;
-  margin-top: 0; }
-  @media (min-width: 1px) and (max-width: 764px) {
-    .paragraph-with-icons p {
-      margin-top: 10px;
-      padding-left: 0; } }
-
 .hl-featured hr {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -546,6 +536,33 @@ table {
   margin-right: 50px;
   vertical-align: middle;
   max-height: 50px; }
+
+.figure img {
+  margin: 1.2em 0; }
+
+.figure img:first-child {
+  margin-top: 0; }
+
+.figure .icon {
+  border: 1px solid #008c46;
+  border-radius: 50px;
+  float: left;
+  margin: 0 10px 10px auto;
+  padding: 2px;
+  vertical-align: middle; }
+  @media (min-width: 1px) and (max-width: 764px) {
+    .figure .icon {
+      display: block;
+      margin: 0 auto 8px;
+      float: none; } }
+
+.paragraph-with-icons p {
+  padding-left: 50px;
+  margin-top: 0; }
+  @media (min-width: 1px) and (max-width: 764px) {
+    .paragraph-with-icons p {
+      margin-top: 10px;
+      padding-left: 0; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -906,7 +923,7 @@ a {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-  clear: both; }
+  clear: both !important; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1184,11 +1201,17 @@ object {
 
 .content-blog-area {
   float: left;
-  width: 75%;
+  width: 65%;
+  margin-right: 10%;
   margin-top: 40px; }
+  @media (min-width: 765px) and (max-width: 1100px) {
+    .content-blog-area {
+      width: 70%;
+      margin-right: 5%; } }
   @media (min-width: 1px) and (max-width: 764px) {
     .content-blog-area {
       margin-top: 120px;
+      margin-right: 0;
       width: 100%;
       float: none; } }
 
@@ -1342,8 +1365,16 @@ object {
 .su-row .hl-featured.su-column {
   margin-bottom: 30px; }
 
+.featured-row {
+  margin-top: 7.5em; }
+
 .site-content .su-row {
   margin-bottom: 45px; }
+
+body.blog body.archive .site-content .su-row,
+body.single body.archive .site-content .su-row,
+body.archive .site-content .su-row {
+  margin-bottom: 0; }
 
 .comment-body {
   padding-bottom: 1em;
@@ -1423,16 +1454,16 @@ object {
   z-index: 99; }
 
 @media (min-width: 1101px) {
-  body.blog, body.post, body.archive, body.search {
+  body.blog, body.post, body.archive, body.search, body.single, body.archive {
     min-height: 100%;
     position: relative; }
-    body.blog .push, body.post .push, body.archive .push, body.search .push {
+    body.blog .push, body.post .push, body.archive .push, body.search .push, body.single .push, body.archive .push {
       height: 12.5em; }
-    body.blog #content, body.post #content, body.archive #content, body.search #content {
+    body.blog #content, body.post #content, body.archive #content, body.search #content, body.single #content, body.archive #content {
       padding-top: 6em;
       min-height: 780px;
       min-height: calc(100vh - 12.5em); }
-    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area {
+    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area, body.single .main-content-area, body.archive .main-content-area {
       position: static;
       min-height: 100%;
       height: auto !important;

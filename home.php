@@ -10,6 +10,7 @@
 <?php endif; ?>	
 			
 		<?php the_content(); ?>
+		<?php hl_entry_comments(); ?>
 		<?php endwhile; ?>
 	<?php endif; ?>
 

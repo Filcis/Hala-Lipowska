@@ -17,19 +17,14 @@ msgstr ""
 msgid "Hala Lipowska Schronisko PTTK"
 msgstr ""
 
-#: header-home.php:7
-#@ hl
-msgid "Czas na relaks"
-msgstr ""
-
-#: 404.php:17
-#@ hl
-msgid "Oops! Strona nie została znaleziona."
+#: 404.php:15
+#@ _s
+msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: 404.php:19
-#@ hl
-msgid "Wygląda na to, że nie znaleziono strony. Wypróbuj wyszukiwanie lub któryś z linków poniżej"
+#@ _s
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
 #: 404.php:27
@@ -79,6 +74,18 @@ msgstr ""
 #: footer.php:16
 #@ _s
 msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+#@ _s
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:18
+#, php-format
+#@ _s
+msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 #: functions.php:45

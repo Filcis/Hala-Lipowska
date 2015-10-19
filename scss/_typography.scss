@@ -35,12 +35,32 @@ h3 {
 
 h4 {
 	font-size: $medium;
+	margin-top: 1em;
 }
 
-h2, h4 {
+h2, h3, h4 {
 	color: $primary-color;
 	font-weight: 400;
 	margin-bottom: 1.2em;
+}
+
+body.blog, body.post, body.archive, body.search, body.single, body.archive {
+
+	h2 {
+		font-size: $medium;
+		margin-bottom: 1em;
+	}
+
+	h3 {
+		font-size: $smedium;
+		margin-bottom: 1em;
+	}
+
+	h4 {
+		font-size: $base;
+		margin-bottom: 1em;
+	}
+	
 }
 
 p {
