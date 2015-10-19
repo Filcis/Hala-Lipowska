@@ -32,24 +32,24 @@ msgstr ""
 msgid "Wygląda na to, że nie znaleziono strony. Wypróbuj wyszukiwanie lub któryś z linków poniżej"
 msgstr ""
 
-#: 404.php:27
+#: 404.php:29
 #@ _s
-msgid "Most Used Categories"
+msgid "Najczęściej odwiedzane kategorie"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: 404.php:44
+#: 404.php:46
 #, php-format
 #@ _s
-msgid "Try looking in the monthly archives. %1$s"
+msgid "Spróbuj sprawdzić w archiwum %1$s"
 msgstr ""
 
-#: comments.php:29
+#: comments.php:30
 #, php-format
 #@ _s
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "Jeden komentarz na temat &ldquo;%2$s&rdquo;"
+msgid_plural "Komentarze na temat &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 

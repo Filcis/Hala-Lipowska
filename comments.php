@@ -27,11 +27,8 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'Jeden komentarz na temat &ldquo;%2$s&rdquo;', '%1$s komentarze na temat &ldquo;%2$s&rdquo;', get_comments_number(), '%1$s komentarzy na temat &ldquo;%2$s&rdquo', 'hl' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
-				);
+				printf( _n( 'Jeden komentarz na temat &ldquo;%2$s&rdquo;', 'Komentarze na temat &ldquo;%2$s&rdquo;', get_comments_number(), 'underscoresme' ),
+					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 
@@ -40,8 +37,8 @@ if ( post_password_required() ) {
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'hl' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'hl' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'hl' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Starsze komentarze', 'hl' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Nowsze komentarze', 'hl' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->

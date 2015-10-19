@@ -131,7 +131,7 @@ function hl_entry_comments() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Napisz komentarz', 'hl' ), esc_html__( '1 Komentarz', 'hl' ), esc_html__( '%1$s komentarzy', 'hl' ) );
+		comments_popup_link( esc_html__( 'Napisz komentarz', 'hl' ), esc_html__( '1 Komentarz', 'hl' ), esc_html__( 'Komentarze (%)', 'hl' ) );
 		echo '</span>';
 	}
 
