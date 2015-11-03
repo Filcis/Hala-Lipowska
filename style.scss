@@ -188,7 +188,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 //Sticky footer overwrites for sites with potentially low content
 
-body.blog, body.post, body.archive, body.search, body.single, body.archive {
+body.blog, body.post, body.archive, body.search, body.single, body.archive, body.error404 {
 	@include mq(large) {
 		min-height: 100%;
 		position: relative; 

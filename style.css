@@ -1459,16 +1459,16 @@ body.archive .site-content .su-row {
   z-index: 99; }
 
 @media (min-width: 1101px) {
-  body.blog, body.post, body.archive, body.search, body.single, body.archive {
+  body.blog, body.post, body.archive, body.search, body.single, body.archive, body.error404 {
     min-height: 100%;
     position: relative; }
-    body.blog .push, body.post .push, body.archive .push, body.search .push, body.single .push, body.archive .push {
+    body.blog .push, body.post .push, body.archive .push, body.search .push, body.single .push, body.archive .push, body.error404 .push {
       height: 12.5em; }
-    body.blog #content, body.post #content, body.archive #content, body.search #content, body.single #content, body.archive #content {
+    body.blog #content, body.post #content, body.archive #content, body.search #content, body.single #content, body.archive #content, body.error404 #content {
       padding-top: 6em;
       min-height: 780px;
       min-height: calc(100vh - 12.5em); }
-    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area, body.single .main-content-area, body.archive .main-content-area {
+    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area, body.single .main-content-area, body.archive .main-content-area, body.error404 .main-content-area {
       position: static;
       min-height: 100%;
       height: auto !important;
