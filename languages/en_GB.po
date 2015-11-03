@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-10-19 10:41+0200\n"
+"POT-Creation-Date: 2015-10-19 11:32+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-10-19 10:43+0200\n"
+"PO-Revision-Date: 2015-10-20 12:19+0200\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8.5\n"
 "Last-Translator: \n"
@@ -23,7 +23,12 @@ msgstr "Hala Lipowska – Mountain Hostel"
 # @ hl
 #: header-home.php:7
 msgid "Czas na relaks"
-msgstr "It’s time to relax"
+msgstr "It&rsquo;s time to relax"
+
+# @ hl
+#: header-page.php:7
+msgid "odkryj"
+msgstr "discover"
 
 # @ hl
 #: 404.php:17
@@ -36,47 +41,49 @@ msgid ""
 "Wygląda na to, że nie znaleziono strony. Wypróbuj wyszukiwanie lub któryś z "
 "linków poniżej"
 msgstr ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
 
 # @ _s
 #: 404.php:29
 msgid "Najczęściej odwiedzane kategorie"
-msgstr ""
+msgstr "Most Used Categories"
 
 # @ _s
 #. translators: %1$s: smiley
 #: 404.php:46
 #, php-format
 msgid "Spróbuj sprawdzić w archiwum %1$s"
-msgstr ""
+msgstr "Try looking in the monthly archives. %1$s"
 
 # @ _s
-#: comments.php:29
+#: comments.php:30
 #, php-format
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "Jeden komentarz na temat &ldquo;%2$s&rdquo;"
+msgid_plural "Komentarze na temat &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
 # @ _s
 #: comments.php:38 comments.php:59
-msgid "Comment navigation"
-msgstr ""
+msgid "Nawigacja w komentarzach"
+msgstr "Comment navigation"
 
 # @ _s
 #: comments.php:41 comments.php:62
-msgid "Older Comments"
-msgstr ""
+msgid "Starsze komentarze"
+msgstr "Older Comments"
 
 # @ _s
 #: comments.php:42 comments.php:63
-msgid "Newer Comments"
-msgstr ""
+msgid "Nowsze komentarze"
+msgstr "Newer Comments"
 
 # @ _s
 #: comments.php:75
-msgid "Comments are closed."
-msgstr ""
+msgid "Komentarze są zamknięte."
+msgstr "Comments are closed"
 
 # @ _s
 #: footer.php:16
@@ -111,18 +118,18 @@ msgstr ""
 
 # @ _s
 #: inc/template-tags.php:27
-msgid "Older posts"
-msgstr ""
+msgid "Starsze posty"
+msgstr "Older Posts"
 
 # @ _s
 #: inc/template-tags.php:31
-msgid "Newer posts"
-msgstr ""
+msgid "Nowsze posty"
+msgstr "Newer Posts"
 
 # @ _s
 #: inc/template-tags.php:56
-msgid "Post navigation"
-msgstr ""
+msgid "Nawigacja w postach"
+msgstr "Posts navigation"
 
 # @ _s
 #: inc/template-tags.php:86
@@ -170,6 +177,21 @@ msgstr ""
 #: inc/template-tags.php:122
 msgid "% Comments"
 msgstr ""
+
+# @ _s
+#: inc/template-tags.php:134
+msgid "Napisz komentarz"
+msgstr "Leave a comment"
+
+# @ _s
+#: inc/template-tags.php:136
+msgid "1 Komentarz"
+msgstr "1 comment"
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "Komentarze (%)"
+msgstr "Comments (%)"
 
 # @ _s
 #: inc/template-tags.php:126 template-parts/content-page.php:26

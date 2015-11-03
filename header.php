@@ -33,7 +33,7 @@
 	
 	<div class="site-branding">
                             
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+		<a href="<?php echo pll_home_url(); ?>" rel="home">
 			
 			<?php if(!is_mobile()) : ?>
 			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttk.svg">

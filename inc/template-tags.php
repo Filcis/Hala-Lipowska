@@ -24,11 +24,11 @@ function the_posts_navigation() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( esc_html__( 'Older posts', 'hl' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( esc_html__( 'Starsze posty', 'hl' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( esc_html__( 'Newer posts', 'hl' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( esc_html__( 'Nowsze posty', 'hl' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -53,7 +53,7 @@ function the_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'hl' ); ?></h2>
+		<h2 class="screen-reader-text"><?php esc_html_e( 'Nawigacja w postach', 'hl' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );

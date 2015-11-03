@@ -22,6 +22,11 @@ msgstr ""
 msgid "Czas na relaks"
 msgstr ""
 
+# @ hl
+#: header-page.php:7
+msgid "odkryj"
+msgstr ""
+
 #: 404.php:17
 #@ hl
 msgid "Oops! Strona nie została znaleziona."
@@ -49,31 +54,31 @@ msgstr ""
 #@ _s
 msgctxt "comments title"
 msgid "Jeden komentarz na temat &ldquo;%2$s&rdquo;"
-msgid_plural "Komentarze na temat &ldquo;%2$s&rdquo;"
+msgid_plural "Komentarze na temat &ldquo;%2$s&rdquo; (%1$s)"
 msgstr[0] ""
 msgstr[1] ""
 
 #: comments.php:38
 #: comments.php:59
 #@ _s
-msgid "Comment navigation"
+msgid "Nawigacja w komentarzach"
 msgstr ""
 
 #: comments.php:41
 #: comments.php:62
 #@ _s
-msgid "Older Comments"
+msgid "Starsze komentarze"
 msgstr ""
 
 #: comments.php:42
 #: comments.php:63
 #@ _s
-msgid "Newer Comments"
+msgid "Nowsze komentarze"
 msgstr ""
 
 #: comments.php:75
 #@ _s
-msgid "Comments are closed."
+msgid "Komentarze są zamknięte."
 msgstr ""
 
 #: footer.php:16
@@ -110,17 +115,17 @@ msgstr ""
 
 #: inc/template-tags.php:27
 #@ _s
-msgid "Older posts"
+msgid "Starsze posty"
 msgstr ""
 
 #: inc/template-tags.php:31
 #@ _s
-msgid "Newer posts"
+msgid "Nowsze posty"
 msgstr ""
 
 #: inc/template-tags.php:56
 #@ _s
-msgid "Post navigation"
+msgid "Nawigacja w postach"
 msgstr ""
 
 #: inc/template-tags.php:86
@@ -169,6 +174,21 @@ msgstr ""
 #: inc/template-tags.php:122
 #@ _s
 msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:134
+#@ _s
+msgid "Napisz komentarz"
+msgstr ""
+
+#: inc/template-tags.php:136
+#@ _s
+msgid "1 Komentarz"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ _s
+msgid "Komentarze (%)"
 msgstr ""
 
 #: inc/template-tags.php:126

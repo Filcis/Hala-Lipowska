@@ -690,13 +690,13 @@ a {
         border-bottom: solid 1px rgba(255, 255, 255, 0.4); } }
     @media (min-width: 765px) and (max-width: 1100px) {
       .main-navigation a {
-        padding: 0 18px;
+        padding: 0 14px;
         font-size: 0.9em; } }
 
 .facebook-icon {
   background: url(ikony/Facebook.svg) no-repeat center;
   width: 25px;
-  margin: 0 20px;
+  margin: 0 10px 0 15px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -704,6 +704,11 @@ a {
     background: url(ikony/Facebook-active.svg) no-repeat center; }
   .facebook-icon a:hover {
     background-color: transparent !important; }
+
+.lang-item a {
+  padding: 0 20px 0 10px; }
+.lang-item a:hover {
+  background-color: transparent !important; }
 
 #menu-toggle {
   position: absolute;
