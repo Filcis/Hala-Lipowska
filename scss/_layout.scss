@@ -357,6 +357,12 @@
 	margin-bottom: 45px;
 }
 
+body.home .site-content .su-row {
+	@include mq(large) {
+		margin-bottom: 85px;
+	}
+}
+
 body.blog body.archive .site-content .su-row,
 body.single body.archive .site-content .su-row,
 body.archive .site-content .su-row {

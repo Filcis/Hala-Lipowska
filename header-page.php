@@ -1,5 +1,6 @@
 <?php if (!is_mobile()) : ?>
-<?php global $post; ?>
+<!-- global variable $post Contains data from the current post in The Loop.-->
+<?php global $post; ?> 
 <?php $hl_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' ); ?>
 	
 <div class="image-wrapper">
