@@ -134,7 +134,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		float: left;
 		a { 
 			color: white;
-			background-color: rgb(150,210,170);
+			background-color: lighten($primary-color, 15%);
 			padding: 2px 4px;
 			-webkit-border-radius: 2px;  /* Safari */
 			-moz-border-radius: 2px;    /* Firefox\Gecko Engine */

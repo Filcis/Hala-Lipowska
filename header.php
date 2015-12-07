@@ -36,9 +36,9 @@
 		<a href="<?php echo pll_home_url(); ?>" rel="home">
 			
 			<?php if(!is_mobile()) : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttk.svg">
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttkzima.svg">
 			<?php else : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile.svg">
+			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile-zima.svg">
 			<?php endif; ?>
 		</a>
 		                        

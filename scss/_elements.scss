@@ -75,7 +75,11 @@ ol {
 }
 
 ul {
-	list-style:  outside url("ikony/bullet.svg") disc;
+	@if $primary-color == $primary-color-winter {
+	list-style:  outside url("ikony/bullet-winter.svg") disc;
+	} @else {
+		list-style:  outside url("ikony/bullet.svg") disc;
+	}
 	.trails & {
 	list-style: none;
 	li {
