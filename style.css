@@ -687,18 +687,12 @@ a {
     display: block;
     height: 100%;
     float: left; }
-    .main-navigation li ul {
-      display: none; }
-    .main-navigation li:hover > ul {
-      display: inherit; }
     @media (min-width: 1px) and (max-width: 764px) {
       .main-navigation li {
         text-align: center;
         width: 60%;
         margin: 0 20%; }
         .main-navigation li:last-child a {
-          border-bottom: none; }
-        .main-navigation li ul li a {
           border-bottom: none; } }
   .main-navigation a {
     display: block;
