@@ -85,11 +85,19 @@ a {
 		display: block;
 		height: 100%;
 		float:left;
+		ul {
+			display: none;
+		}
+		&:hover > ul { display: inherit; }
+
 		@include mq(small) {
 			text-align: center;
 			width: 60%;
 			margin: 0 20%;
 			&:last-child a {
+				border-bottom: none;
+			}
+			ul li a { //remove border from submenu
 				border-bottom: none;
 			}
 		}
