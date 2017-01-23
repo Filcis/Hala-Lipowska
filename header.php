@@ -34,12 +34,7 @@
 	<div class="site-branding">
                             
 		<a href="<?php echo pll_home_url(); ?>" rel="home">
-			
-			<?php if(!is_mobile()) : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logopttkzima.svg">
-			<?php else : ?>
-			<img id="logo" src= "<?php echo get_stylesheet_directory_uri();?>/images/logo-mobile-zima.svg">
-			<?php endif; ?>
+			<?php hl_logo(); ?>
 		</a>
 		                        
      </div><!-- .site-branding -->
@@ -55,7 +50,7 @@
 <?php if ( is_front_page() && !is_home() ) : ?>	
 <!-- get slider logo and headlines -->
 <?php get_template_part( 'header-home'); ?>
-<?php elseif (is_home() || is_page_template( 'page-noslider.php') || !is_page()) : ?>
+<?php elseif (is_home() || is_page_template( 'page-noslider.php') || is_page( 'galeria') || !is_page()) : ?>
 <?php else : ?>
 <!-- get futured image and headlines -->
 <?php get_template_part( 'header-page'); ?>

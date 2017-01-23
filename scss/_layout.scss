@@ -357,12 +357,6 @@
 	margin-bottom: 45px;
 }
 
-body.home .site-content .su-row {
-	@include mq(large) {
-		margin-bottom: 85px;
-	}
-}
-
 body.blog body.archive .site-content .su-row,
 body.single body.archive .site-content .su-row,
 body.archive .site-content .su-row {
@@ -373,4 +367,18 @@ body.archive .site-content .su-row {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	border-bottom: 1px solid lightgrey;
+}
+
+
+.hide-on-mobile {
+	@include mq(990px) {
+		display: none;
+	}
+}
+
+.show-on-mobile {
+	display: none;
+	@include mq(990px) {
+		display: block;
+	}
 }

@@ -130,7 +130,7 @@ dfn {
 h1 {
   font-size: 18px;
   font-weight: 400;
-  color: #0078aa;
+  color: #008c32;
   margin: 0.67em 0; }
 
 mark {
@@ -291,7 +291,7 @@ h4 {
   margin-top: 1em; }
 
 h2, h3, h4 {
-  color: #0078aa;
+  color: #008c46;
   font-weight: 400;
   margin-bottom: 1.2em; }
 
@@ -494,7 +494,7 @@ ol {
   padding-left: 0; }
 
 ul {
-  list-style: outside url("ikony/bullet-winter.svg") disc; }
+  list-style: outside url("ikony/bullet.svg") disc; }
   .trails ul {
     list-style: none; }
     .trails ul li {
@@ -544,7 +544,7 @@ table {
   margin-top: 0; }
 
 .figure .icon {
-  border: 1px solid #0078aa;
+  border: 1px solid #008c46;
   border-radius: 50px;
   float: left;
   margin: 0 10px 10px auto;
@@ -563,24 +563,6 @@ table {
     .paragraph-with-icons p {
       margin-top: 10px;
       padding-left: 0; } }
-
-.learn-more-button {
-  display: inline-block;
-  margin-top: 1em;
-  text-align: center;
-  border-radius: 10px;
-  padding: 2px 12px;
-  font-size: 0.9em;
-  background: #fff;
-  border: 1px solid #0078aa;
-  color: #0078aa;
-  letter-spacing: 1px;
-  text-shadow: 0;
-  cursor: pointer;
-  transition: all 0.25s ease; }
-  .learn-more-button:hover {
-    color: white;
-    background: #0078aa; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -627,7 +609,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0078aa; }
+  color: #008c46; }
 
 /*--------------------------------------------------------------
 ## Menus and branding
@@ -635,7 +617,7 @@ a {
 /*contains logo and navigation*/
 .main-navigation-wrapper {
   height: 60px;
-  background-color: rgba(0, 120, 170, 0.7);
+  background-color: rgba(0, 140, 70, 0.7);
   z-index: 99999;
   position: absolute;
   top: 0;
@@ -676,7 +658,7 @@ a {
       position: absolute;
       top: 95px;
       width: 100%;
-      background-color: #006691;
+      background-color: #007339;
       padding: 12px 0; } }
   .main-navigation ul {
     white-space: nowrap;
@@ -708,13 +690,13 @@ a {
         border-bottom: solid 1px rgba(255, 255, 255, 0.4); } }
     @media (min-width: 765px) and (max-width: 1100px) {
       .main-navigation a {
-        padding: 0 14px;
+        padding: 0 18px;
         font-size: 0.9em; } }
 
 .facebook-icon {
   background: url(ikony/Facebook.svg) no-repeat center;
   width: 25px;
-  margin: 0 10px 0 15px;
+  margin: 0 20px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -723,11 +705,6 @@ a {
   .facebook-icon a:hover {
     background-color: transparent !important; }
 
-.lang-item a {
-  padding: 0 20px 0 10px; }
-.lang-item a:hover {
-  background-color: transparent !important; }
-
 #menu-toggle {
   position: absolute;
   top: 60px;
@@ -735,7 +712,7 @@ a {
   height: 50px;
   margin: auto 0;
   z-index: 5;
-  background-color: #0078aa;
+  background-color: #008c46;
   border: none;
   color: #ffffff;
   font-size: 17px;
@@ -759,7 +736,7 @@ a {
 
 .main-navigation-wrapper .current-menu-item,
 .main-navigation-wrapper a:hover {
-  background-color: #187da7; }
+  background-color: #148c50; }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -799,7 +776,7 @@ a {
 
 #latest-posts ul li {
   list-style: none;
-  background-color: rgba(0, 120, 170, 0.5);
+  background-color: rgba(0, 140, 70, 0.5);
   margin-bottom: 20px; }
 
 #latest-posts ul li a {
@@ -842,7 +819,7 @@ a {
         font-size: 1.333em;
         line-height: 2rem;
         padding: 2px 10px;
-        color: #0078aa; }
+        color: #008c46; }
         .hl-tabs.su-tabs .su-tabs-nav span:last-child {
           border-right: none; } }
 
@@ -1260,7 +1237,7 @@ object {
   padding: 15px; }
 
 .historia:nth-of-type(2n) {
-  background: rgba(0, 120, 170, 0.1) none repeat scroll 0 0; }
+  background: rgba(0, 140, 70, 0.1) none repeat scroll 0 0; }
 
 .historia {
   margin: 0;
@@ -1297,8 +1274,8 @@ object {
   position: relative;
   z-index: 2;
   width: 100%;
-  border-top: 1px solid #0078aa;
-  background-color: #0071a0; }
+  border-top: 1px solid #008c46;
+  background-color: #008241; }
   @media (min-width: 1101px) {
     .footer-area {
       height: 12.5em; } }
@@ -1326,16 +1303,16 @@ object {
         color: white;
         text-decoration: none; }
   .footer-area input[type="submit"] {
-    background-color: #0078aa;
+    background-color: #008c46;
     color: #fff;
     padding: 5px;
     border-radius: 10px;
-    border: 1px solid #589cb8; }
+    border: 1px solid #49a979; }
   .footer-area input[type="text"] {
     width: 80%;
     max-width: 200px;
-    border-color: #589cb8;
-    background-color: #adc1c9; }
+    border-color: #49a979;
+    background-color: #9bbdac; }
   @media (min-width: 1px) and (max-width: 764px) {
     .footer-area {
       max-height: 520px;
@@ -1373,13 +1350,13 @@ object {
   z-index: 4;
   cursor: pointer;
   width: 36px;
-  color: #0078aa;
+  color: #008c46;
   left: 50%;
   margin-left: -18px; }
 
 .hl-featured {
   background-color: #fff;
-  border: 3px double #0078aa;
+  border: 3px double #008c46;
   border-radius: 5px;
   padding: 15px;
   text-align: center;
@@ -1393,10 +1370,6 @@ object {
 
 .site-content .su-row {
   margin-bottom: 45px; }
-
-@media (min-width: 1101px) {
-  body.home .site-content .su-row {
-    margin-bottom: 85px; } }
 
 body.blog body.archive .site-content .su-row,
 body.single body.archive .site-content .su-row,
@@ -1428,7 +1401,7 @@ body.archive .site-content .su-row {
     float: left; }
     .post-categories li a {
       color: white;
-      background-color: #00aef7;
+      background-color: #96d2aa;
       padding: 2px 4px;
       -webkit-border-radius: 2px;
       /* Safari */
@@ -1481,16 +1454,16 @@ body.archive .site-content .su-row {
   z-index: 99; }
 
 @media (min-width: 1101px) {
-  body.blog, body.post, body.archive, body.search, body.single, body.archive, body.error404 {
+  body.blog, body.post, body.archive, body.search, body.single, body.archive {
     min-height: 100%;
     position: relative; }
-    body.blog .push, body.post .push, body.archive .push, body.search .push, body.single .push, body.archive .push, body.error404 .push {
+    body.blog .push, body.post .push, body.archive .push, body.search .push, body.single .push, body.archive .push {
       height: 12.5em; }
-    body.blog #content, body.post #content, body.archive #content, body.search #content, body.single #content, body.archive #content, body.error404 #content {
+    body.blog #content, body.post #content, body.archive #content, body.search #content, body.single #content, body.archive #content {
       padding-top: 6em;
       min-height: 780px;
       min-height: calc(100vh - 12.5em); }
-    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area, body.single .main-content-area, body.archive .main-content-area, body.error404 .main-content-area {
+    body.blog .main-content-area, body.post .main-content-area, body.archive .main-content-area, body.search .main-content-area, body.single .main-content-area, body.archive .main-content-area {
       position: static;
       min-height: 100%;
       height: auto !important;

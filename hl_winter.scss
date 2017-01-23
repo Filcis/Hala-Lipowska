@@ -1,0 +1,94 @@
+@import "bourbon/bourbon";
+
+@import "scss/variables";
+
+@import "scss/mqueries";
+
+$primary-color: rgb(0, 157, 202);
+.figure .icon {
+    border: 1px solid $primary-color; 
+}
+.historia:nth-of-type(2n){
+    background:  transparentize($primary-color, 0.9) none repeat scroll 0 0;
+}
+.footer-area {
+	border-top: 1px solid $primary-color;
+	background-color: darken($primary-color,2);
+    input[type="submit"] {
+		background-color: $primary-color;
+		border: 1px solid desaturate(lighten($primary-color, 20),60);
+	}
+	input[type="text"] {
+		border-color: desaturate(lighten($primary-color, 20),60);
+		background-color: desaturate(lighten($primary-color, 40),80);
+}
+}
+
+.arrow-down-button-secondary {
+    color: $primary-color;
+}
+
+.hl-featured {
+    border: 3px double $primary-color;
+}
+a {
+	color: $primary-color;
+}
+.main-navigation-wrapper { 
+	background-color: transparentize($primary-color, 0.3);
+}
+
+.main-navigation {
+	@include mq(small) {
+		background-color: darken($primary-color,5);
+	}
+}
+    
+#menu-toggle {
+	background-color: $primary-color;
+}
+
+.main-navigation-wrapper { 
+	.current-menu-item,
+	a:hover {
+		background-color: lighten(desaturate($primary-color,25),4);
+	}
+}
+#latest-posts ul li {
+	background-color: transparentize($primary-color, 0.5);
+}
+h1, h2, h3, h4 {
+	color: $primary-color;
+}
+
+.hl-tabs.su-tabs {
+    	@include mq(small) {
+	background-color: rgb(215, 219, 240);
+	.su-tabs-nav {
+			.su-tabs-current {
+				background-color:rgb(180, 200, 220) ;
+			}
+		}
+    }
+	@include mq(from-medium) {
+        background-color: #fff;
+        border: none;
+            .su-tabs-current {
+            background-color: #fff;
+        }
+		.su-tabs-nav span {
+			color: $primary-color;
+		}
+	}
+}
+ul {
+    list-style: url(ikony/bullet-winter.svg);
+}
+
+.post-categories {
+	li {
+		a { 
+			background-color: rgb(120,160,210);
+		}
+	}
+}

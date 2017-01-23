@@ -27,16 +27,3 @@
 		}
 	}
 }
-
-.hide-on-mobile {
-	@include mq(990px) {
-		display: none;
-	}
-}
-
-.show-on-mobile {
-	display: none;
-	@include mq(990px) {
-		display: block;
-	}
-}

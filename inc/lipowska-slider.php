@@ -7,8 +7,7 @@
 */
 
 
-function l_slider_init() {
-	add_shortcode('l_slider-shortcode', 'l_slider_function');
+function hl_slider_init() {
     $args = array(
         'public' => true,
         'label' => 'Lipowska slider',
@@ -20,7 +19,7 @@ function l_slider_init() {
     register_post_type('lslider_images', $args);
 
 }
-add_action('init', 'l_slider_init');
+add_action('init', 'hl_slider_init');
 
 //--------------------------------------------------------------------
 
@@ -37,9 +36,10 @@ function l_slider_function($type='l_slider_function') {
     $loop = new WP_Query($args);
     while ($loop->have_posts()) {
         $loop->the_post();
- 
-        $the_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), $type);
-		$result .='<div style="background-image: url('. $the_url[0] .');"></div>';
+        $the_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'poster');
+		$result .='<div 
+            style="background-image: url('. $the_url[0] .');
+            "></div>';
     }
 	
     $result .= '</div>';

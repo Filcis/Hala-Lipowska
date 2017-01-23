@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Font Stacks
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Font Sizes
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+.figure .icon {
+  border: 1px solid #009dca; }
+
+.historia:nth-of-type(2n) {
+  background: rgba(0, 157, 202, 0.1) none repeat scroll 0 0; }
+
+.footer-area {
+  border-top: 1px solid #009dca;
+  background-color: #0095c0; }
+  .footer-area input[type="submit"] {
+    background-color: #009dca;
+    border: 1px solid #6fafc1; }
+  .footer-area input[type="text"] {
+    border-color: #6fafc1;
+    background-color: #c1d1d5; }
+
+.arrow-down-button-secondary {
+  color: #009dca; }
+
+.hl-featured {
+  border: 3px double #009dca; }
+
+a {
+  color: #009dca; }
+
+.main-navigation-wrapper {
+  background-color: rgba(0, 157, 202, 0.7); }
+
+@media (min-width: 1px) and (max-width: 764px) {
+  .main-navigation {
+    background-color: #0089b1; } }
+
+#menu-toggle {
+  background-color: #009dca; }
+
+.main-navigation-wrapper .current-menu-item,
+.main-navigation-wrapper a:hover {
+  background-color: #1c9dc3; }
+
+#latest-posts ul li {
+  background-color: rgba(0, 157, 202, 0.5); }
+
+h1, h2, h3, h4 {
+  color: #009dca; }
+
+@media (min-width: 1px) and (max-width: 764px) {
+  .hl-tabs.su-tabs {
+    background-color: #d7dbf0; }
+    .hl-tabs.su-tabs .su-tabs-nav .su-tabs-current {
+      background-color: #b4c8dc; } }
+@media (min-width: 765px) {
+  .hl-tabs.su-tabs {
+    background-color: #fff;
+    border: none; }
+    .hl-tabs.su-tabs .su-tabs-current {
+      background-color: #fff; }
+    .hl-tabs.su-tabs .su-tabs-nav span {
+      color: #009dca; } }
+
+ul {
+  list-style: url(ikony/bullet-winter.svg); }
+
+.post-categories li a {
+  background-color: #78a0d2; }
+
+/*# sourceMappingURL=hl_winter.css.map */

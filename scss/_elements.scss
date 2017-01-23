@@ -75,11 +75,7 @@ ol {
 }
 
 ul {
-	@if $primary-color == $primary-color-winter {
-	list-style:  outside url("ikony/bullet-winter.svg") disc;
-	} @else {
-		list-style:  outside url("ikony/bullet.svg") disc;
-	}
+	list-style:  outside url("ikony/bullet.svg") disc;
 	.trails & {
 	list-style: none;
 	li {
@@ -155,25 +151,5 @@ table {
 	@include mq(small) {
 		margin-top: 10px;
 		padding-left: 0;
-	}
-}
-
-.learn-more-button {
-	display: inline-block; //for auto-calculating width and top-margin
-	margin-top: 1em;
-	text-align: center;
-	border-radius: 10px;
-	padding: 2px 12px;
-	font-size: 0.9em;
-	background: #fff;
-	border: 1px solid $primary-color;
-	color:$primary-color;
-	letter-spacing:1px;
-	text-shadow:0;
-	cursor: pointer;
-	transition: all 0.25s ease;
-	&:hover {
-		color:white;
-		background: $primary-color;
 	}
 }
