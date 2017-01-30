@@ -6,7 +6,6 @@
     Version: 1.0
 */
 
-
 function hl_slider_init() {
     $args = array(
         'public' => true,

@@ -27,7 +27,7 @@
     <div class="header-area full-wrapper">        
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hl' ); ?></a>
 
-<header id="masthead" class="site-header " role="banner">
+<header id="masthead" class="site-header" role="banner">
 						
 <div class='main-navigation-wrapper'>	
 	

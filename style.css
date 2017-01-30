@@ -1,11 +1,8 @@
-@charset "UTF-8";
 /*
 Theme Name: Hala Lipowska
-Theme URI: http://underscores.me/
-Author: Filip Ci┼Ťlak
-Author URI: http://underscores.me/
-Description: Custom theme for client \"Hala Lipowska\"
-Version: 1.0.0
+Author: Filip Cislak
+Description: Custom theme for Hala Lipowska
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hl
@@ -54,16 +51,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media (max-width: 990px) {
-  .hide-on-mobile {
-    display: none; } }
-
-.show-on-mobile {
-  display: none; }
-  @media (max-width: 990px) {
-    .show-on-mobile {
-      display: block; } }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1380,6 +1367,16 @@ body.archive .site-content .su-row {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid lightgrey; }
+
+@media (max-width: 990px) {
+  .hide-on-mobile {
+    display: none; } }
+
+.show-on-mobile {
+  display: none; }
+  @media (max-width: 990px) {
+    .show-on-mobile {
+      display: block; } }
 
 .meta {
   font-size: 0.8em;

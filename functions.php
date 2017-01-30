@@ -249,7 +249,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/lipowska-slider.php';
 
-require get_template_directory() . '/inc/lipowska-options.php';
+require get_template_directory() . '/inc/hl_tiles.php';
+
 
 require get_template_directory() . '/inc/hl_extras.php';
 
