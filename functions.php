@@ -166,7 +166,7 @@ add_action('wp_print_styles', 'wpb_add_google_fonts');
 function hl_scripts() {
 	wp_enqueue_style( 'hl-style', get_stylesheet_uri() );
     
-	wp_enqueue_script( 'hl-nojs', get_template_directory_uri() . '/js/hl-nojs.js', '', '', false );
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', '', '', false );
 	
 	wp_enqueue_script( 'lettering', get_template_directory_uri() . '/js/jquery.lettering.js', array('jquery'), '', true );
 	
@@ -198,7 +198,7 @@ function create_posttype() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'galerie'),
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+			'supports'  => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 		)
 	);
 }
@@ -249,7 +249,13 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/lipowska-slider.php';
 
+include_once('advanced-custom-fields/acf.php');
+
+//define( 'ACF_LITE', true );
+
 require get_template_directory() . '/inc/hl_tiles.php';
+
+//require get_template_directory() . '/inc/hl_tiles.php';
 
 
 require get_template_directory() . '/inc/hl_extras.php';

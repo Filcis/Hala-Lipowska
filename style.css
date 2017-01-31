@@ -1355,6 +1355,26 @@ object {
 .featured-row {
   margin-top: 7.5em; }
 
+.flexbox .tiles_flex_wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  .flexbox .tiles_flex_wrapper > .featured-activities {
+    width: 24%; }
+
 .site-content .su-row {
   margin-bottom: 45px; }
 

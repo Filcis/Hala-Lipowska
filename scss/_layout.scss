@@ -352,6 +352,18 @@
 	margin-top: 7.5em;
 }
 
+.flexbox .tiles_flex_wrapper {
+    @include display(flex);
+    @include justify-content(space-between);
+    & > .featured-activities {
+        width: 24%;
+    }
+}
+
+//.featured-activities {
+//    width: 2
+//}
+
 
 .site-content .su-row {
 	margin-bottom: 45px;
