@@ -46,7 +46,7 @@ function hl_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'hl' ),
 	) );
-	
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -143,6 +143,15 @@ function hl_widgets_init() {
 		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>',
 	) );
+	register_sidebar( array(
+		'name' => 'Prognoza pogody',
+		'id' => 'hl-forecast',
+		'description' => 'Appears on the weather page',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="title">',
+		'after_title' => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'hl_widgets_init' );
 
@@ -165,17 +174,17 @@ add_action('wp_print_styles', 'wpb_add_google_fonts');
 
 function hl_scripts() {
 	wp_enqueue_style( 'hl-style', get_stylesheet_uri() );
-    
+
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', '', '', false );
-	
+
 	wp_enqueue_script( 'lettering', get_template_directory_uri() . '/js/jquery.lettering.js', array('jquery'), '', true );
-	
+
 	wp_enqueue_script( 'textillate', get_template_directory_uri() . '/js/jquery.textillate.js', array('jquery'), '', true );
-       
+
 	wp_enqueue_script( 'hl-main', get_template_directory_uri() . '/js/hl-main.js', array('jquery'), '', true );
-	
+
 	wp_enqueue_script( 'hl-slider', get_template_directory_uri() . '/js/hl-slider.js', array('jquery'), '', true );
-	
+
 	wp_enqueue_script( 'hl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -259,4 +268,3 @@ require get_template_directory() . '/inc/hl_tiles.php';
 
 
 require get_template_directory() . '/inc/hl_extras.php';
-

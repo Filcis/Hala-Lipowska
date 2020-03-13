@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*Plugin Name: Tiles post type
 Description: Plugin registering tiles for use in hala-lipowska theme
 Version: 1.0
@@ -12,14 +12,14 @@ add_action( 'init', 'hl_tiles_register', 0 );
 function hl_tiles_register() {
 
 	$labels = array(
-		'name'                  => _x( 'Kafelki', 'Post Type General Name', 'hl' ),
-		'singular_name'         => _x( 'Kafelek', 'Post Type Singular Name', 'hl' ),
-		'menu_name'             => __( 'Kafelki', 'hl' ),
-		'name_admin_bar'        => __( 'Kafelki', 'hl' ),
+		'name'                  => __( 'Kafelki'),
+		'singular_name'         => __( 'Kafelek'),
+		'menu_name'             => __( 'Kafelki'),
+		'name_admin_bar'        => __( 'Kafelki'),
 	);
 	$args = array(
-		'label'                 => __( 'Kafelek', 'hl' ),
-		'description'           => __( 'Post Type Description', 'hl' ),
+		'label'                 => __( 'Kafelek'),
+		'description'           => __( 'Post Type Description'),
 		'labels'                => $labels,
 		'supports'              => array( ),
 		'hierarchical'          => false,
@@ -30,11 +30,11 @@ function hl_tiles_register() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => false,		
+		'has_archive'           => false,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => false,
 		'capability_type'       => 'page',
-        'supports'              => 'title'
+    'supports'              => array('title')
 	);
 	register_post_type( 'hl_tiles', $args );
 
@@ -220,7 +220,7 @@ $output = '';
         $output .= '</div>';
     }
     wp_reset_postdata();
-    
+
     return $output;
 }
 

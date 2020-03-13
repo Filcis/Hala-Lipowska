@@ -111,6 +111,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 
 @import "scss/layout";
+@import "scss/weather";
+
 
 .meta {
 	font-size: 0.8em;
@@ -130,7 +132,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		font-size: 0.8em;
 		margin: 0.5em 0.5em 1em 0;
 		float: left;
-		a { 
+		a {
 			color: white;
 			background-color: rgb(150,210,170);
 			padding: 2px 4px;
@@ -189,7 +191,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 body.blog, body.post, body.archive, body.search, body.single, body.archive {
 	@include mq(large) {
 		min-height: 100%;
-		position: relative; 
+		position: relative;
 		.push {
 			height: 12.5em;
 		}
@@ -207,4 +209,3 @@ body.blog, body.post, body.archive, body.search, body.single, body.archive {
 		}
 	}
 }
-

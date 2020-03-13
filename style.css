@@ -285,9 +285,11 @@ h2, h3, h4 {
 body.blog h2, body.post h2, body.archive h2, body.search h2, body.single h2, body.archive h2 {
   font-size: 1.333em;
   margin-bottom: 1em; }
+
 body.blog h3, body.post h3, body.archive h3, body.search h3, body.single h3, body.archive h3 {
   font-size: 1.1997em;
   margin-bottom: 1em; }
+
 body.blog h4, body.post h4, body.archive h4, body.search h4, body.single h4, body.archive h4 {
   font-size: 1em;
   margin-bottom: 1em; }
@@ -309,10 +311,12 @@ p {
 @media (min-width: 1px) and (max-width: 764px) {
   .widget-area aside {
     padding: 0 0 1.2em 0; } }
+
 @media (min-width: 1px) and (max-width: 764px) {
   .widget-area aside input {
     width: 100%;
     height: 3em; } }
+
 .widget-area h2 {
   font-size: 1em;
   margin-bottom: 0.2em; }
@@ -320,6 +324,7 @@ p {
     .widget-area h2 {
       font-size: 1.5992em;
       margin-bottom: 0.5em; } }
+
 .widget-area p, .widget-area li, .widget-area a {
   font-size: 0.97524em; }
   @media (min-width: 1px) and (max-width: 764px) {
@@ -1241,13 +1246,13 @@ object {
   width: 100%;
   height: 100%;
   z-index: 4;
-  background: transparent;
-  background: -moz-linear-gradient(top, transparent 39%, rgba(0, 0, 0, 0.4) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(39%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4)));
-  background: -webkit-linear-gradient(top, transparent 39%, rgba(0, 0, 0, 0.4) 100%);
-  background: -o-linear-gradient(top, transparent 39%, rgba(0, 0, 0, 0.4) 100%);
-  background: -ms-linear-gradient(top, transparent 39%, rgba(0, 0, 0, 0.4) 100%);
-  background: linear-gradient(to bottom, transparent 39%, rgba(0, 0, 0, 0.4) 100%);
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.4) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.4) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 39%, rgba(0, 0, 0, 0.4) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
 
 .more-wrapper {
@@ -1486,5 +1491,3 @@ body.archive .site-content .su-row {
       height: auto !important;
       height: 100%;
       margin: 0 auto -12.5em; } }
-
-/*# sourceMappingURL=style.css.map */
